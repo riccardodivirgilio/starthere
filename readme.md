@@ -1,11 +1,12 @@
 This is a sample repository for the Wolfram Summer School 2017.
 
-once you signup fork this repository to get started:
+you can clone or fork this repository to get started
 https://github.com/riccardodivirgilio/starthere/fork
 
 Thing to do to get started with GIT:
 
 ## create a new repo
+or fork this one
 you need to give write permission to that repo to your tutor and with @alisonkimball
 in instructors.csv you can find a list of all instructors.
 
