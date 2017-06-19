@@ -1,7 +1,7 @@
-This is a sample repository for the Wolfram Summer School 2017.
+# https://wolfr.am/ss2017git
 
+This is a sample repository for the Wolfram Summer School 2017
 you can clone or fork this repository to get started
-#https://wolfr.am/ss2017git
 
 Thing to do to get started with GIT:
 
