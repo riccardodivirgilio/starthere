@@ -17,7 +17,7 @@ in instructors.csv you can find a list of all instructors.
 |https://github.com/batracos|Giulio Alessandrini|giulioa@wolfram.com|
 |https://github.com/bernate|Bernat Espigulé|bernatep@gmail.com|
 |https://github.com/carlobarbieri|Carlo Barbieri|carlob@wolfram.com|
-|https://github.com/crazyeng|Riccardo Di Virgilio|riccardod@wolfram.com|
+|https://github.com/riccardodivirgilio|Riccardo Di Virgilio|riccardod@wolfram.com|
 |https://github.com/digiflux|Vitaliy Kaurov|vitaliyk@wolfram.com|
 |https://github.com/etiennebcp|Etienne Bernard|etienneb@wolfram.com|
 |https://github.com/gerli|Gerli Jõgeva|gerlij@wolfram.com|
