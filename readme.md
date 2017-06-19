@@ -39,3 +39,18 @@ the readme should contain:
 1. what your project is about
 2. how to run your code
 3. examples, code documentation, etc
+
+## organize your code
+in this repository you will find 2 different ways to organize your code, the simple way and the advanced way.
+
+### the easy way
+you split your logic into functions that you need for your projects and notebooks that you use to visualize data and show final results.
+1. the code is in starthere/simple.m
+2. the notebook used for visualization is in starthere/simple.nb
+
+### the advanced way
+I prepared a very simple project paclet you can use, it provides a way to organize your code and your data
+
+1. the code is in paclet in starthere/Project folder
+2. raw source data can be put in starthere/Project/Assets/ folder
+3. the notebook used for visualization is in starthere/advanced.nb
