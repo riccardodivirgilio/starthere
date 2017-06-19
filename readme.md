@@ -6,16 +6,20 @@ you can clone or fork this repository to get started
 Thing to do to get started with GIT:
 
 ## Download and install Git
-_On OSX_:
-Download and install github desktop: https://desktop.github.com  
-Install command line utility: `brew install git`
+*On OSX*:
+Download and install github desktop:  
+https://desktop.github.com  
+Install command line utility:  
+`brew install git`
 
-_On Windows_:
-Download and install github desktop: https://desktop.github.com  
-it also installs command line utility
+*On Windows*:
+Download and install github desktop:  
+https://desktop.github.com  
+_it also installs command line utility_
 
-_On Ubuntu_:
-Install command line utility: `apt-get install git`  
+*On Ubuntu*:
+Install command line utility:  
+`apt-get install git`  
 Download and install a gui:  
 https://www.gitkraken.com  
 
