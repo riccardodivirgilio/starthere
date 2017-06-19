@@ -10,6 +10,29 @@ or fork this one
 you need to give write permission to that repo to your tutor and with @alisonkimball
 in instructors.csv you can find a list of all instructors.
 
+|Github        |Tutor         |Email         |
+|------------- |--------------|--------------|
+|https://github.com/alisonkimball|Alison Kimball|alisonk@wolfram.com|
+|https://github.com/anonymouse64|Ian Johnson|ijohnson@wolfram.com|
+|https://github.com/batracos|Giulio Alessandrini|giulioa@wolfram.com|
+|https://github.com/bernate|Bernat Espigulé|bernatep@gmail.com|
+|https://github.com/carlobarbieri|Carlo Barbieri|carlob@wolfram.com|
+|https://github.com/crazyeng|Riccardo Di Virgilio|riccardod@wolfram.com|
+|https://github.com/digiflux|Vitaliy Kaurov|vitaliyk@wolfram.com|
+|https://github.com/gerli|Gerli Jõgeva|gerlij@wolfram.com|
+|https://github.com/jofregit|Jofre Espigule-Pons|jofree@wolfram.com|
+|https://github.com/KMDaily|Kevin Daily|kevind@wolfram.com|
+|https://github.com/KyleKeane|Kyle Keane|kylek@wolfram.com|
+|https://github.com/levantina|Valentina Biagini|vbiagini@gmail.com|
+|https://github.com/maboyer|Mark Boyer|markb@wolfram.com|
+|https://github.com/matteosal|Matteo Salvarezza|matteos@wolfram.com|
+|https://github.com/matthews-wri|Matthew Szudzik|mszudzik@wolfram.com|
+|https://github.com/paulcabbott|Paul Abbott|paul.c.abbott@gmail.com|
+|https://github.com/publicusrex|Peter Barendse|pbarendse@wolfram.com|
+|https://github.com/r-nachbar|Robert Nachbar|rnachbar@wolfram.com|
+|https://github.com/turnmlz|Lizzie Turner|lizziet@wolfram.com|
+|https://github.com/xavierrw|Xavier Roy|xavierr@wolfram.com|
+
 ## write a readme using MarkDown
 a nice cheatsheet can be found here: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 the readme should contain: 
