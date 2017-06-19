@@ -5,28 +5,11 @@ you can clone or fork this repository to get started
 
 Thing to do to get started with GIT:
 
-## Download and install a Git UI
-*On OSX / Wndows*:  
-Download and install github desktop:  
-https://desktop.github.com  
-
-*On Ubuntu*:  
-Download and install git kraken:  
-https://www.gitkraken.com  
-Login and authenticate with GitHub  
-https://support.gitkraken.com/integrations/github
-
-## Install command line utility (optional)
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-
 ## Create a GitHub account
 https://github.com/join
 
 ## Create a new repo
 you can either create a new repo or fork this one
-
-## Clone the repo locally
-by clicking on the button CLONE OR DOWNLOAD and then to OPEN IN DESKTOP
 
 ## Give your instructor write permissions
 you need to give write permission to that repo to your tutor and to @alisonkimball
@@ -55,6 +38,23 @@ in instructors.csv you can find a list of all instructors.
 |https://github.com/riccardodivirgilio|Riccardo Di Virgilio|riccardod@wolfram.com|
 |https://github.com/turnmlz|Lizzie Turner|lizziet@wolfram.com|
 |https://github.com/xavierrw|Xavier Roy|xavierr@wolfram.com|
+
+## Download and install a Git UI
+*On OSX / Wndows*:  
+Download and install github desktop:  
+https://desktop.github.com  
+
+*On Ubuntu*:  
+Download and install git kraken:  
+https://www.gitkraken.com  
+Login and authenticate with GitHub  
+https://support.gitkraken.com/integrations/github
+
+## Install command line utility (optional)
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+## Clone the repo locally
+by clicking on the button CLONE OR DOWNLOAD and then to OPEN IN DESKTOP
 
 ## Write a readme using MarkDown
 a nice cheatsheet can be found here: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
