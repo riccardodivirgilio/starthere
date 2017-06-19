@@ -19,6 +19,7 @@ in instructors.csv you can find a list of all instructors.
 |https://github.com/carlobarbieri|Carlo Barbieri|carlob@wolfram.com|
 |https://github.com/crazyeng|Riccardo Di Virgilio|riccardod@wolfram.com|
 |https://github.com/digiflux|Vitaliy Kaurov|vitaliyk@wolfram.com|
+|https://github.com/etiennebcp|Etienne Bernard|etienneb@wolfram.com|
 |https://github.com/gerli|Gerli Jõgeva|gerlij@wolfram.com|
 |https://github.com/jofregit|Jofre Espigule-Pons|jofree@wolfram.com|
 |https://github.com/KMDaily|Kevin Daily|kevind@wolfram.com|
