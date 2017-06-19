@@ -7,7 +7,9 @@ Thing to do to get started with GIT:
 
 ## Create a new repo
 you can either create a new repo or fork this one
-you need to give write permission to that repo to your tutor and with @alisonkimball
+
+## Give your instructor write permissions
+you need to give write permission to that repo to your tutor and to @alisonkimball
 in instructors.csv you can find a list of all instructors.
 
 |Github        |Tutor         |Email         |
