@@ -5,7 +5,7 @@ you can clone or fork this repository to get started
 
 Thing to do to get started with GIT:
 
-## Download and install Github Desktop
+## Download and install Git
 _On OSX_:
 Download and install github desktop: https://desktop.github.com  
 Install command line utility: `brew install git`
