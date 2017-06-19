@@ -32,6 +32,9 @@ https://github.com/join
 ## Create a new repo
 you can either create a new repo or fork this one
 
+## Clone the repo locally
+by clicking on the button CLONE OR DOWNLOAD and then to OPEN IN DESKTOP
+
 ## Give your instructor write permissions
 you need to give write permission to that repo to your tutor and to @alisonkimball
 in instructors.csv you can find a list of all instructors.
