@@ -18,7 +18,6 @@ _On Ubuntu_:
 Install command line utility: `apt-get install git`  
 Download and install a gui:  
 https://www.gitkraken.com  
-https://www.collab.net/downloads/giteye  
 
 Login and authenticate with GitHub
 https://support.gitkraken.com/integrations/github
