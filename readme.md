@@ -6,11 +6,7 @@ you can clone or fork this repository to get started
 Thing to do to get started with GIT:
 
 ## Download and install a Git UI
-*On OSX*:  
-Download and install github desktop:  
-https://desktop.github.com  
-
-*On Windows*:  
+*On OSX / Wndows*:  
 Download and install github desktop:  
 https://desktop.github.com  
 
