@@ -6,16 +6,13 @@ you can clone or fork this repository to get started
 Thing to do to get started with GIT:
 
 ## Download and install Github Desktop
-all platforms
-https://desktop.github.com
+all platforms: https://desktop.github.com
 
 on windows it also install command line utility
 
-on debian
-```apt-get install git```
+on debian: `apt-get install git`
 
-on osx
-```brew install git```
+on osx: `brew install git`
 
 ## Create a new repo
 you can either create a new repo or fork this one
