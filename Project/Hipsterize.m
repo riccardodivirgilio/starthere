@@ -1,6 +1,5 @@
 Package["Project`"]
 
-
 (* this is declaring that a certain simbol can be used OUTSIDE the paclet *)
 PackageExport[Hipsterize]
 
