@@ -5,7 +5,7 @@ https://github.com/riccardodivirgilio/starthere/fork
 
 Thing to do to get started with GIT:
 
-## create a new repo
+## Create a new repo
 you can either create a new repo or fork this one
 you need to give write permission to that repo to your tutor and with @alisonkimball
 in instructors.csv you can find a list of all instructors.
@@ -34,22 +34,22 @@ in instructors.csv you can find a list of all instructors.
 |https://github.com/turnmlz|Lizzie Turner|lizziet@wolfram.com|
 |https://github.com/xavierrw|Xavier Roy|xavierr@wolfram.com|
 
-## write a readme using MarkDown
+## Write a readme using MarkDown
 a nice cheatsheet can be found here: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 the readme should contain: 
 1. what your project is about
 2. how to run your code
 3. examples, code documentation, etc
 
-## organize your code
+## Organize your code
 in this repository you will find 2 different ways to organize your code, the simple way and the advanced way.
 
-### the easy way
+### The simple way
 you split your logic into functions that you need for your projects and notebooks that you use to visualize data and show final results.
 1. the code is in starthere/simple.m
 2. the notebook used for visualization is in starthere/simple.nb
 
-### the advanced way
+### The advanced way
 I prepared a very simple project paclet you can use, it provides a way to organize your code and your data
 
 1. the code is in paclet in starthere/Project folder
