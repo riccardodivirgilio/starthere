@@ -5,26 +5,23 @@ you can clone or fork this repository to get started
 
 Thing to do to get started with GIT:
 
-## Download and install Git
+## Download and install a Git UI
 *On OSX*:  
 Download and install github desktop:  
 https://desktop.github.com  
-Install command line utility:  
-`brew install git`
 
 *On Windows*:  
 Download and install github desktop:  
 https://desktop.github.com  
-_it also installs command line utility_
 
 *On Ubuntu*:  
-Install command line utility:  
-`apt-get install git`  
-Download and install a gui:  
+Download and install git kraken:  
 https://www.gitkraken.com  
-
 Login and authenticate with GitHub  
 https://support.gitkraken.com/integrations/github
+
+## Install command line utility (optional)
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 ## Create a GitHub account
 https://github.com/join
