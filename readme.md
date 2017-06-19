@@ -5,6 +5,18 @@ you can clone or fork this repository to get started
 
 Thing to do to get started with GIT:
 
+## Download and install Github Desktop
+all platforms
+https://desktop.github.com
+
+on windows it also install command line utility
+
+on debian
+```apt-get install git```
+
+on osx
+```brew install git```
+
 ## Create a new repo
 you can either create a new repo or fork this one
 
@@ -48,12 +60,12 @@ in this repository you will find 2 different ways to organize your code, the sim
 
 ### The simple way
 you split your logic into functions that you need for your projects and notebooks that you use to visualize data and show final results.
-1. the code is in starthere/simple.m
-2. the notebook used for visualization is in starthere/simple.nb
+1. the code is in `starthere/simple.m`
+2. the notebook used for visualization is in `starthere/simple.nb`
 
 ### The advanced way
 I prepared a very simple project paclet you can use, it provides a way to organize your code and your data
 
-1. the code is in paclet in starthere/Project folder
-2. raw source data can be put in starthere/Project/Assets/ folder
-3. the notebook used for visualization is in starthere/advanced.nb
+1. the code is in paclet in `starthere/Project` folder
+2. raw source data can be put in `starthere/Project/Assets/` folder
+3. the notebook used for visualization is in `starthere/advanced.nb`
