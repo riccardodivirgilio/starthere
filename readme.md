@@ -27,7 +27,7 @@ in instructors.csv you can find a list of all instructors.
 |https://github.com/maboyer|Mark Boyer|markb@wolfram.com|
 |https://github.com/matteosal|Matteo Salvarezza|matteos@wolfram.com|
 |https://github.com/matthews-wri|Matthew Szudzik|mszudzik@wolfram.com|
-|https://github.com/paulcabbott|Paul Abbott|paul.c.abbott@gmail.com|
+|https://github.com/paulcabbott|Paul Abbott|abbott@wolfram.com|
 |https://github.com/publicusrex|Peter Barendse|pbarendse@wolfram.com|
 |https://github.com/r-nachbar|Robert Nachbar|rnachbar@wolfram.com|
 |https://github.com/riccardodivirgilio|Riccardo Di Virgilio|riccardod@wolfram.com|
