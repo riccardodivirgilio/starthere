@@ -6,7 +6,7 @@ https://github.com/riccardodivirgilio/starthere/fork
 Thing to do to get started with GIT:
 
 ## create a new repo
-or fork this one
+you can either create a new repo or fork this one
 you need to give write permission to that repo to your tutor and with @alisonkimball
 in instructors.csv you can find a list of all instructors.
 
