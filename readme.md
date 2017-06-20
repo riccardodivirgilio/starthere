@@ -36,6 +36,7 @@ in instructors.csv you can find a list of all instructors.
 |https://github.com/publicusrex|Peter Barendse|pbarendse@wolfram.com|
 |https://github.com/r-nachbar|Robert Nachbar|rnachbar@wolfram.com|
 |https://github.com/riccardodivirgilio|Riccardo Di Virgilio|riccardod@wolfram.com|
+|https://github.com/timotheev|Timothee Verdier|timotheev@wolfram.com|
 |https://github.com/turnmlz|Lizzie Turner|lizziet@wolfram.com|
 |https://github.com/xavierrw|Xavier Roy|xavierr@wolfram.com|
 
