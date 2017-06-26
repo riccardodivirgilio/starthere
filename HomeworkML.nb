@@ -1,0 +1,2045 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     84404,       2037]
+NotebookOptionsPosition[     74457,       1811]
+NotebookOutlinePosition[     80794,       1952]
+CellTagsIndexPosition[     80751,       1949]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Ideas & Growth", "Title",
+ CellChangeTimes->{{3.700774153171832*^9, 3.700774159196458*^9}, {
+  3.705104157104324*^9, 3.7051041574063416`*^9}, {3.70568519155404*^9, 
+  3.705685209964157*^9}, {3.707211933576446*^9, 
+  3.70721194029359*^9}},ExpressionUUID->"52bb8e3f-ba09-4fa5-9fef-\
+a965494c54cf"],
+
+Cell["The importance of good ideas for economic development", "Abstract",
+ CellChangeTimes->{{3.700774172671139*^9, 3.700774220850109*^9}, {
+  3.700778895632181*^9, 3.700778896308676*^9}, {3.7051041615775795`*^9, 
+  3.705104170817108*^9}, {3.707211944053377*^9, 3.707212013634177*^9}, {
+  3.707214615709049*^9, 
+  3.707214625189681*^9}},ExpressionUUID->"51b05cee-2620-4891-ae6f-\
+1d5852e3a3ab"],
+
+Cell[CellGroupData[{
+
+Cell["Capital Accumulation", "Section",
+ CellChangeTimes->{{3.700774708350976*^9, 3.700774714085747*^9}, {
+  3.7051042493566003`*^9, 3.7051042513157125`*^9}, {3.705686166481989*^9, 
+  3.7056861672865133`*^9}, {3.7072120351911983`*^9, 3.707212041446782*^9}, {
+  3.707212082793025*^9, 
+  3.707212083337103*^9}},ExpressionUUID->"a32cd897-6768-43c3-89e4-\
+ec2f609797ce"],
+
+Cell["\<\
+A country\[CloseCurlyQuote]s output (Y), i.e., its total production, is a \
+function of its ability to accumulate physical capital (K), such as \
+infrastructure or machines, and human capital (eL), i.e., skilled labor \
+force, and \[OpenCurlyDoubleQuote]Ideas\[CloseCurlyDoubleQuote] (A),\
+\>", "Text",
+ CellChangeTimes->{{3.700774312865305*^9, 3.700774350341485*^9}, {
+  3.7051042689957237`*^9, 3.7051043842073135`*^9}, {3.705105072313671*^9, 
+  3.705105092602831*^9}, {3.705683778330366*^9, 3.705683783009487*^9}, {
+  3.7072120884331636`*^9, 3.707212212439376*^9}, {3.7072122732799377`*^9, 
+  3.707212367890128*^9}, {3.707212471372814*^9, 3.707212532285735*^9}, {
+  3.7072125686043997`*^9, 3.707212793344644*^9}, {3.7072128424100513`*^9, 
+  3.707213100293173*^9}, {3.707213137250287*^9, 3.707213327659506*^9}, {
+  3.7072133737962723`*^9, 3.7072138379886703`*^9}, {3.707214261078528*^9, 
+  3.707214274171722*^9}, {3.707214434141725*^9, 3.707214541871539*^9}, {
+  3.707214601993984*^9, 3.707214604357359*^9}, {3.707214859367715*^9, 
+  3.707214861533853*^9}, {3.707215223839402*^9, 3.707215311149185*^9}, {
+  3.707244757027933*^9, 3.707244786698518*^9}, {3.707244908542058*^9, 
+  3.707244917915924*^9}},
+ TextJustification->1.,ExpressionUUID->"3b903c3c-4ed2-4db4-b9b3-fe2e28b0923c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Framed", "[", "\"\<Y=f(K, eL,A)\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.707237047521522*^9, 3.707237185015462*^9}, {
+  3.7072372761415873`*^9, 3.707237336954156*^9}},
+ CellLabel->
+  "In[338]:=",ExpressionUUID->"23288dc8-1316-4096-ae13-890903a41d85"],
+
+Cell[BoxData[
+ FrameBox["\<\"Y=f(K, eL,A)\"\>",
+  StripOnInput->False]], "Output",
+ CellChangeTimes->{3.707237337897378*^9},
+ CellLabel->
+  "Out[338]=",ExpressionUUID->"0fdef915-7feb-43aa-92b5-7d6f906736dd"]
+}, {2}]],
+
+Cell["\<\
+In order to demonstrate the importance of Ideas two supporting concepts must \
+first be illustrated: Diminishing returns of capital and depreciation.\
+\>", "Text",
+ CellChangeTimes->{3.707244925486208*^9},
+ TextJustification->1.,ExpressionUUID->"1763d6fb-7c74-4dc0-8e63-eeeb9794272c"],
+
+Cell[CellGroupData[{
+
+Cell["Diminishing Returns of Capital", "Subsection",
+ CellChangeTimes->{{3.7072148737833443`*^9, 3.7072148829020567`*^9}, {
+  3.707214917466913*^9, 
+  3.7072149430293837`*^9}},ExpressionUUID->"dedde65f-aebf-4b76-a6c8-\
+84b14719af5b"],
+
+Cell[TextData[{
+ "Let us simplify the function so as to imagine there are fixed levels of ",
+ StyleBox["eL",
+  FontSlant->"Italic"],
+ " and ",
+ StyleBox["A, ",
+  FontSlant->"Italic"],
+ "and that the output level is solely dependent on changes in K accumulation. \
+If K is continuously growing, the nth unit of K will never be as productive \
+as the first one. For instance, when a single tractor is acquired for the \
+first time to assist in production, it will certainly wield a lot of output \
+growth. But, if more tractors keep getting added to the production line, the \
+nth tractor won\[CloseCurlyQuote]t produce as much as the first one. At some \
+point, as available arable land becomes scarce, the amount of work that can \
+be done by the nth tractor won\[CloseCurlyQuote]t justify the cost of \
+acquiring (and maintaining) a new machine. This reveals a fundamental \
+property of the output function: the diminishing returns of capital, i.e., \
+The more capital you have, the lesser is the impact (per unit of capital) on \
+output."
+}], "Text",
+ CellChangeTimes->{
+  3.7072149632480583`*^9, {3.707214994522264*^9, 3.707215097167202*^9}, {
+   3.707215133635807*^9, 3.707215179532261*^9}, {3.7072369937087173`*^9, 
+   3.707236999091998*^9}},
+ TextJustification->1.,ExpressionUUID->"2e6e0bdf-e3a5-49eb-b105-1cae08bd95f3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Framed", "[", "\"\<Y=\!\(\*SqrtBox[\(K\)]\)\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7072368787089663`*^9, 3.707236983831435*^9}, {
+  3.707237194880651*^9, 3.707237266414715*^9}},
+ CellLabel->
+  "In[337]:=",ExpressionUUID->"a5ed3482-92d5-4ca8-bf5c-1b6f006db0b1"],
+
+Cell[BoxData[
+ FrameBox["\<\"Y=\\!\\(\\*SqrtBox[\\(K\\)]\\)\"\>",
+  StripOnInput->False]], "Output",
+ CellChangeTimes->{3.7072369854140778`*^9, 3.707237031742762*^9, 
+  3.707237269814748*^9},
+ CellLabel->
+  "Out[337]=",ExpressionUUID->"6b6438f4-3b14-44c1-9782-4df2fc748dc4"]
+}, {2}]],
+
+Cell[TextData[{
+ "Visual illustration of diminishing returns of physical capital (",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox["K"], TraditionalForm]],ExpressionUUID->
+  "f034bf5f-0980-495f-98d8-c61a7f4f0d15"],
+ "):"
+}], "Text",
+ CellChangeTimes->{
+  3.7072370091733503`*^9},ExpressionUUID->"c5d60a32-3936-4007-8a74-\
+8188574eb759"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"labelY", "=", 
+    RowBox[{"Inset", "[", 
+     RowBox[{
+      RowBox[{"Framed", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Column", "[", 
+           RowBox[{"{", 
+            RowBox[{"Grid", "[", 
+             RowBox[{"{", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Graphics", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"(*", "*)"}], 
+                   RowBox[{
+                    RowBox[{"GrayLevel", "[", "0.9", "]"}], ",", 
+                    RowBox[{"Directive", "[", 
+                    RowBox[{
+                    RowBox[{"GrayLevel", "[", "0.85", "]"}], ",", 
+                    RowBox[{"EdgeForm", "[", 
+                    RowBox[{"Opacity", "[", "0.7", "]"}], "]"}], ",", 
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{".6", ",", ".73", ",", ".36"}], "]"}]}], "]"}], 
+                    ",", 
+                    RowBox[{"Rectangle", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"ImageSize", "\[Rule]", "10"}], "}"}]}], "]"}], 
+                ",", 
+                RowBox[{"Style", "[", 
+                 RowBox[{"\"\<Output\>\"", ",", "10"}], "]"}]}], "}"}], "}"}],
+              "]"}], "}"}], "]"}], ",", "\"\<TR\>\"", ",", 
+          RowBox[{"ShowStringCharacters", "\[Rule]", "False"}]}], "]"}], ",", 
+        
+        RowBox[{"FrameStyle", "\[Rule]", 
+         RowBox[{"Thickness", "[", "0.001", "]"}]}], ",", 
+        RowBox[{"RoundingRadius", "\[Rule]", "4"}]}], "]"}], ",", 
+      RowBox[{"ImageScaled", "[", 
+       RowBox[{"{", 
+        RowBox[{"0.25", ",", "0.85"}], "}"}], "]"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Delta]", "=", ".02"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"Tooltip", "[", 
+        RowBox[{
+         RowBox[{"a", " ", 
+          RowBox[{"k", "^", ".5"}]}], ",", 
+         RowBox[{"Row", "[", 
+          RowBox[{"{", 
+           RowBox[{"\"\<f\>\"", ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<(K)\>\"", ",", "Italic"}], "]"}]}], "}"}], "]"}]}], 
+        "]"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", " ", "range"}], "}"}], ",", " ", 
+       "\[IndentingNewLine]", "\t\t", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "70"}], ",", " ", "range"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "9.9"}], ",", "37"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Row", "[", 
+             RowBox[{"{", "\"\<Capital\>\"", "}"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"550", ",", 
+              RowBox[{"-", "8"}]}], "}"}]}], "]"}], ",", "11"}], "]"}], ",", 
+        "\[IndentingNewLine]", "\t\t", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Row", "[", 
+             RowBox[{"{", "\"\<Output\>\"", "}"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "47"}], ",", "36"}], "}"}]}], "]"}], ",", "11"}], 
+         "]"}], " ", ",", 
+        RowBox[{"Thickness", "[", ".0025", "]"}], ",", "Dotted", ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", "\t\t", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"a", "^", "2"}], 
+              FractionBox[
+               RowBox[{" ", 
+                SuperscriptBox["s", "2"]}], 
+               SuperscriptBox["\[Delta]", "2"]]}], ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"a", "^", "2"}], 
+              FractionBox[
+               RowBox[{" ", 
+                SuperscriptBox["s", "2"]}], 
+               SuperscriptBox["\[Delta]", "2"]]}], ",", " ", 
+             RowBox[{
+              RowBox[{"a", "^", "2"}], 
+              SuperscriptBox[
+               RowBox[{"(", 
+                FractionBox[
+                 SuperscriptBox["s", "2"], 
+                 SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], "}"}]}],
+           "}"}], "]"}], ",", 
+        RowBox[{"Darker", "[", 
+         RowBox[{"Yellow", ",", ".3"}], "]"}], ",", "\[IndentingNewLine]", 
+        "\t\t", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{"\"\<Y = \!\(\*SqrtBox[\(k\)]\)\>\"", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "30"}], ",", 
+              RowBox[{
+               RowBox[{"a", "^", "2"}], 
+               SuperscriptBox[
+                RowBox[{"(", 
+                 FractionBox[
+                  SuperscriptBox["s", "2"], 
+                  SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+             "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Bold", ",", "12", ",", " ", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{".6", ",", ".73", ",", ".36"}], "]"}]}], "}"}]}], "]"}], 
+        ",", "\[IndentingNewLine]", "\t\t", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{"\"\<K\>\"", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"a", "^", "2"}], " ", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"s", "^", "2"}], ")"}], "/", 
+                RowBox[{"\[Delta]", "^", "2"}]}]}], ",", 
+              RowBox[{"-", "5"}]}], "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Bold", ",", "12", ",", " ", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{"0", ",", "0", ",", "0"}], "]"}]}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", "\t\t", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             RowBox[{
+              RowBox[{"a", "^", "2"}], 
+              SuperscriptBox[
+               RowBox[{"(", 
+                FractionBox[
+                 SuperscriptBox["s", "2"], 
+                 SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], "}"}], 
+           ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"a", "^", "2"}], 
+              FractionBox[
+               RowBox[{" ", 
+                SuperscriptBox["s", "2"]}], 
+               SuperscriptBox["\[Delta]", "2"]]}], ",", " ", 
+             RowBox[{
+              RowBox[{"a", "^", "2"}], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                FractionBox[
+                 SuperscriptBox["s", "2"], 
+                 SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], "}"}]}],
+           "}"}], "]"}], ",", 
+        RowBox[{"Darker", "[", 
+         RowBox[{"Yellow", ",", ".3"}], "]"}]}], "\[IndentingNewLine]", 
+       "\t\t", "}"}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"600", ",", "300"}], "}"}]}], ",", 
+     RowBox[{"Epilog", "\[Rule]", "labelY"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"s", ",", ".12", ",", "\"\<Diminishing Returns of K\>\""}], 
+      "}"}], ",", ".05", ",", " ", ".5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"range", ",", "600", ",", "\"\<Plot Range\>\""}], "}"}], ",", 
+     "150", ",", " ", "7000", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Button", "[", 
+    RowBox[{"\"\<reset\>\"", ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"s", "=", ".12"}], ",", " ", 
+        RowBox[{"range", "=", "600"}], ",", " ", 
+        RowBox[{"default", "=", "False"}]}], "}"}], "&"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"AutorunSequencing", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", "3"}], "}"}]}]}], " ", "]"}]}], "Input",
+ CellChangeTimes->{
+  3.707214707946084*^9, 3.707229206597398*^9, {3.707229247676383*^9, 
+   3.707229293057859*^9}, {3.7072317602567043`*^9, 3.7072317642315197`*^9}, 
+   3.707245447873448*^9, 3.707245497104282*^9, 3.707245585871777*^9, {
+   3.707245838023472*^9, 3.707245857796082*^9}, {3.707246011776216*^9, 
+   3.707246032264151*^9}, {3.707246064508543*^9, 3.707246204563365*^9}, 
+   3.707246236325161*^9, 3.7072463530372667`*^9, 3.707246674379084*^9, {
+   3.7072467195156507`*^9, 3.7072467758415327`*^9}, {3.707248030266945*^9, 
+   3.707248051840777*^9}},
+ CellLabel->
+  "In[395]:=",ExpressionUUID->"20cf231d-d3e5-4164-b029-bb17f0b1fd71"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`range$$ = 600, $CellContext`s$$ = 0.12, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`s$$], 0.12, "Diminishing Returns of K"}, 0.05, 
+      0.5}, {{
+       Hold[$CellContext`range$$], 600, "Plot Range"}, 150, 7000}, {
+      Hold[
+       Button[
+       "reset", {$CellContext`s$$ = 0.12, $CellContext`range$$ = 
+         600, $CellContext`default = False}& ]], 
+      Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
+    600., {148., 152.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`s$341176$$ = 
+    0, $CellContext`range$341177$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`range$$ = 600, $CellContext`s$$ = 0.12}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$341176$$, 0], 
+        Hold[$CellContext`range$$, $CellContext`range$341177$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[
+         Tooltip[$CellContext`a $CellContext`k^0.5, 
+          Row[{"f", 
+            Style["(K)", Italic]}]], {$CellContext`k, 
+          0, $CellContext`range$$}, 
+         PlotRange -> {{-70, $CellContext`range$$}, {-9.9, 37}}], 
+        Graphics[{
+          Style[
+           Text[
+            Row[{"Capital"}], {550, -8}], 11], 
+          Style[
+           Text[
+            Row[{"Output"}], {-47, 36}], 11], 
+          Thickness[0.0025], Dotted, 
+          
+          Line[{{$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]^2), 
+             0}, {$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]^2), $CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]^2)^0.5}}], 
+          Darker[Yellow, 0.3], 
+          Style[
+           Text[
+           "Y = \!\(\*SqrtBox[\(k\)]\)", {-30, $CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]^2)^0.5}], {Bold, 12, 
+            RGBColor[0.6, 0.73, 0.36]}], 
+          Style[
+           Text[
+           "K", {$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]^2), -5}], {Bold, 12, 
+            RGBColor[0, 0, 0]}], 
+          
+          Line[{{0, $CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]^2)^0.5}, {$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]^2), $CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]^2)^0.5}}], 
+          Darker[Yellow, 0.3]}], ImageSize -> {600, 300}, 
+        Epilog -> $CellContext`labelY], 
+      "Specifications" :> {{{$CellContext`s$$, 0.12, 
+          "Diminishing Returns of K"}, 0.05, 0.5, Appearance -> 
+         "Labeled"}, {{$CellContext`range$$, 600, "Plot Range"}, 150, 7000, 
+         Appearance -> "Labeled"}, 
+        Button[
+        "reset", {$CellContext`s$$ = 0.12, $CellContext`range$$ = 
+          600, $CellContext`default = False}& ]}, 
+      "Options" :> {AutorunSequencing -> {1, 2, 3}}, "DefaultOptions" :> {}],
+     ImageSizeCache->{645., {222., 228.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.70722931091549*^9, 3.7072404623705063`*^9, 
+  3.707245451669609*^9, 3.7072455886295424`*^9, 3.707248077907576*^9},
+ CellLabel->
+  "Out[398]=",ExpressionUUID->"a1f3c3cb-ace4-4b2b-a797-da23020c1dd4"]
+}, {2}]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Investment, Savings and Consumption", "Subsection",
+ CellChangeTimes->{{3.7072177908207483`*^9, 3.707217818136385*^9}, {
+  3.707230735616643*^9, 3.707230764165959*^9}, {3.707245108187682*^9, 
+  3.70724511514552*^9}},ExpressionUUID->"1f26a3db-c62e-44fd-accc-\
+f7dfe8a81071"],
+
+Cell["\<\
+The output accumulated by capital can either be reinvested into further \
+production or consumed, always one or the other. For simplicity, again, let\
+\[CloseCurlyQuote]s assume that savings (s) is equal to investment (I), there \
+is no idle money in the country and the ratio of capital is a constant ratio. \
+One will see that the ratio of investment will grow with capital \
+accumulation, does this mean an endless loop of accumulation and \
+reinvestment? If that were the case developed countries would always display \
+higher growth rates than their developing counterparts, which does not \
+happen. That is because depreciation (\[Delta]) \[OpenCurlyDoubleQuote]eats \
+away\[CloseCurlyDoubleQuote] at the value of physical capital, as the capital \
+wares out from repeated use, just like a tractor or a highway would after \
+many years of usage. If we assume a constant rate of depreciation, when \
+combined with the diminishing returns of capital, the country will only keep \
+on growing if it augments its physical capital. In developed countries there \
+is very little margin to add more infrastructure, as most of the land \
+available for production may already be in use. 
+
+In the graph below you can see how the model demonstrates how the dynamics of \
+capital accumulation, savings and depreciation limit the possibility of \
+endless output growth. Try moving around their values on the graph and mouse \
+over the point were investment equals depreciation to see the Steady State \
+label: \
+\>", "Text",
+ CellChangeTimes->{{3.707217826345355*^9, 3.707218030380063*^9}, {
+  3.707230771453754*^9, 3.707230774990035*^9}, {3.707230850921321*^9, 
+  3.707231306209489*^9}, {3.707231379493445*^9, 3.70723149693451*^9}, {
+  3.707235031324469*^9, 3.70723521732964*^9}, {3.707235249635962*^9, 
+  3.7072354167879667`*^9}, {3.707235483826084*^9, 3.707235540808186*^9}, {
+  3.707235581404995*^9, 3.7072361603226213`*^9}, {3.707236316385548*^9, 
+  3.707236405286868*^9}},
+ TextJustification->1.,ExpressionUUID->"8e540382-cd85-4d2a-b4fd-a209ac3a3175"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"labelAll", "=", 
+    RowBox[{"Inset", "[", 
+     RowBox[{
+      RowBox[{"Framed", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Column", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Grid", "[", 
+              RowBox[{"{", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Graphics", "[", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"GrayLevel", "[", "0.9", "]"}], ",", 
+                    RowBox[{"Directive", "[", 
+                    RowBox[{
+                    RowBox[{"GrayLevel", "[", "0.85", "]"}], ",", 
+                    RowBox[{"EdgeForm", "[", 
+                    RowBox[{"Opacity", "[", "0.7", "]"}], "]"}], ",", 
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{".6", ",", ".73", ",", ".36"}], "]"}]}], "]"}], 
+                    ",", 
+                    RowBox[{"Rectangle", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{"ImageSize", "\[Rule]", "10"}], "}"}]}], "]"}], 
+                 ",", 
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<Output\>\"", ",", "10"}], "]"}]}], "}"}], 
+               "}"}], "]"}], ",", 
+             RowBox[{"Grid", "[", 
+              RowBox[{"{", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Graphics", "[", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"GrayLevel", "[", "0.9", "]"}], ",", 
+                    RowBox[{"Directive", "[", 
+                    RowBox[{
+                    RowBox[{"GrayLevel", "[", "0.85", "]"}], ",", 
+                    RowBox[{"EdgeForm", "[", 
+                    RowBox[{"Opacity", "[", "0.7", "]"}], "]"}], ",", 
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{".49", ",", "0", ",", "0"}], "]"}]}], "]"}], ",", 
+                    
+                    RowBox[{"Rectangle", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{"ImageSize", "\[Rule]", "10"}], "}"}]}], "]"}], 
+                 ",", 
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<Investment\>\"", ",", "10"}], "]"}]}], "}"}], 
+               "}"}], "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"Grid", "[", 
+              RowBox[{"{", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Graphics", "[", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"GrayLevel", "[", "0.9", "]"}], ",", 
+                    RowBox[{"Directive", "[", 
+                    RowBox[{
+                    RowBox[{"GrayLevel", "[", "0.85", "]"}], ",", 
+                    RowBox[{"EdgeForm", "[", 
+                    RowBox[{"Opacity", "[", "0.7", "]"}], "]"}], ",", 
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{".25", ",", ".43", ",", ".82"}], "]"}]}], "]"}], 
+                    ",", 
+                    RowBox[{"Rectangle", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{"ImageSize", "\[Rule]", "10"}], "}"}]}], "]"}], 
+                 ",", 
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<Depreciation\>\"", ",", "10"}], "]"}]}], "}"}],
+                "}"}], "]"}]}], "}"}], "]"}], ",", "\"\<TR\>\"", ",", 
+          RowBox[{"ShowStringCharacters", "\[Rule]", "False"}]}], "]"}], ",", 
+        
+        RowBox[{"FrameStyle", "\[Rule]", 
+         RowBox[{"Thickness", "[", "0.001", "]"}]}], ",", 
+        RowBox[{"RoundingRadius", "\[Rule]", "4"}]}], "]"}], ",", 
+      RowBox[{"ImageScaled", "[", 
+       RowBox[{"{", 
+        RowBox[{"0.25", ",", "0.85"}], "}"}], "]"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", " ", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Tooltip", "[", 
+          RowBox[{
+           RowBox[{"\[Delta]", " ", "k"}], ",", " ", 
+           "\"\<Depreciation = \[Delta] k\>\""}], "]"}], ",", " ", 
+         RowBox[{"Tooltip", "[", 
+          RowBox[{
+           RowBox[{"a", " ", 
+            RowBox[{"k", "^", ".5"}]}], ",", 
+           RowBox[{"Row", "[", 
+            RowBox[{"{", 
+             RowBox[{"\"\<Output = \>\"", ",", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<\!\(\*SqrtBox[\(k\)]\)\>\"", ",", "Italic"}], 
+               "]"}]}], "}"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Tooltip", "[", 
+          RowBox[{
+           RowBox[{"s", " ", "a", " ", 
+            RowBox[{"k", "^", ".5"}]}], ",", 
+           RowBox[{"Row", "[", 
+            RowBox[{"{", 
+             RowBox[{"\"\<Investment = \>\"", ",", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\[Gamma] \!\(\*SqrtBox[\(k\)]\)\>\"", ",", "Italic"}], 
+               "]"}]}], "}"}], "]"}]}], "]"}]}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", " ", "range"}], "}"}], ",", " ", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Thickness", "[", ".005", "]"}], ",", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{".25", ",", ".43", ",", ".82"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Thickness", "[", ".005", "]"}], ",", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{".6", ",", ".73", ",", ".36"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Thickness", "[", ".005", "]"}], ",", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{".49", ",", "0", ",", "0"}], "]"}]}], "}"}]}], "}"}]}], 
+       ",", " ", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "70"}], ",", " ", "range"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "9.9"}], ",", "37"}], "}"}]}], "}"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Filling", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{"1", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "3", "}"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Opacity", "[", "0.2", "]"}], ",", "Green"}], "}"}], 
+              ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Opacity", "[", "0.2", "]"}], ",", " ", "Red"}], 
+               "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"a", "^", "2"}], 
+            FractionBox[
+             RowBox[{" ", 
+              SuperscriptBox["s", "2"]}], 
+             SuperscriptBox["\[Delta]", "2"]]}], ",", 
+           RowBox[{"s", " ", 
+            RowBox[{"a", "^", "2"}], 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox[
+               SuperscriptBox["s", "2"], 
+               SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], "}"}], 
+         "]"}], ",", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"TableForm", "[", 
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+               "\"\<\!\(\*SuperscriptBox[\(k\), \(*\)]\)= \>\"", ",", 
+                RowBox[{
+                 RowBox[{"a", "^", "2"}], 
+                 FractionBox[
+                  RowBox[{" ", 
+                   SuperscriptBox["s", "2"]}], 
+                  SuperscriptBox["\[Delta]", "2"]]}]}], "}"}], "]"}], "]"}], 
+            ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"a", "^", "2"}], " ", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"s", "^", "2"}], ")"}], "/", 
+                RowBox[{"\[Delta]", "^", "2"}]}]}], ",", 
+              RowBox[{"-", "5"}]}], "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"12", ",", "Bold"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Row", "[", 
+             RowBox[{"{", "\"\<Capital\>\"", "}"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"550", ",", 
+              RowBox[{"-", "8"}]}], "}"}]}], "]"}], ",", "11"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Row", "[", 
+             RowBox[{"{", "\"\<Output\>\"", "}"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "47"}], ",", "36"}], "}"}]}], "]"}], ",", "11"}], 
+         "]"}], " ", ",", 
+        RowBox[{"Thickness", "[", ".0025", "]"}], ",", "Dotted", ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"a", "^", "2"}], 
+              FractionBox[
+               RowBox[{" ", 
+                SuperscriptBox["s", "2"]}], 
+               SuperscriptBox["\[Delta]", "2"]]}], ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"a", "^", "2"}], 
+              FractionBox[
+               RowBox[{" ", 
+                SuperscriptBox["s", "2"]}], 
+               SuperscriptBox["\[Delta]", "2"]]}], ",", " ", 
+             RowBox[{
+              RowBox[{"a", "^", "2"}], 
+              SuperscriptBox[
+               RowBox[{"(", 
+                FractionBox[
+                 SuperscriptBox["s", "2"], 
+                 SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], "}"}]}],
+           "}"}], "]"}], ",", 
+        RowBox[{"Darker", "[", 
+         RowBox[{"Yellow", ",", ".3"}], "]"}], ",", " ", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Tooltip", "[", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", 
+               RowBox[{"s", " ", 
+                RowBox[{"a", "^", "2"}], " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  FractionBox[
+                   SuperscriptBox["s", "2"], 
+                   SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], "}"}],
+              ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"a", "^", "2"}], 
+                FractionBox[
+                 RowBox[{" ", 
+                  SuperscriptBox["s", "2"]}], 
+                 SuperscriptBox["\[Delta]", "2"]]}], ",", " ", 
+               RowBox[{"s", " ", 
+                RowBox[{"a", "^", "2"}], 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  FractionBox[
+                   SuperscriptBox["s", "2"], 
+                   SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+              "}"}]}], "}"}], "]"}], ",", 
+          "\"\<STEADY-STATE -> Investment = Depreciation\>\""}], " ", "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{"\"\<I \>\"", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "50"}], ",", 
+              RowBox[{"s", " ", 
+               RowBox[{"a", "^", "2"}], 
+               SuperscriptBox[
+                RowBox[{"(", 
+                 FractionBox[
+                  SuperscriptBox["s", "2"], 
+                  SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+             "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Bold", ",", "12", ",", " ", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{".49", ",", "0", ",", "0"}], "]"}]}], "}"}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{"\"\<= D\>\"", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "33"}], ",", 
+              RowBox[{"s", " ", 
+               RowBox[{"a", "^", "2"}], 
+               SuperscriptBox[
+                RowBox[{"(", 
+                 FractionBox[
+                  SuperscriptBox["s", "2"], 
+                  SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+             "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Bold", ",", "12", ",", " ", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{".25", ",", ".43", ",", ".82"}], "]"}]}], "}"}]}], "]"}],
+         ",", "\[IndentingNewLine]", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{"\"\<Y=\!\(\*SqrtBox[\(k\)]\)\>\"", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "30"}], ",", 
+              RowBox[{
+               RowBox[{"a", "^", "2"}], 
+               SuperscriptBox[
+                RowBox[{"(", 
+                 FractionBox[
+                  SuperscriptBox["s", "2"], 
+                  SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+             "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Bold", ",", "12", ",", " ", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{".6", ",", ".73", ",", ".36"}], "]"}]}], "}"}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"Tooltip", "[", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", 
+               RowBox[{
+                RowBox[{"a", "^", "2"}], 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  FractionBox[
+                   SuperscriptBox["s", "2"], 
+                   SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], "}"}],
+              ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"a", "^", "2"}], 
+                FractionBox[
+                 RowBox[{" ", 
+                  SuperscriptBox["s", "2"]}], 
+                 SuperscriptBox["\[Delta]", "2"]]}], ",", " ", 
+               RowBox[{
+                RowBox[{"a", "^", "2"}], " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  FractionBox[
+                   SuperscriptBox["s", "2"], 
+                   SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+              "}"}]}], "}"}], "]"}], ",", "\"\<steady-state Y\>\""}], " ", 
+         "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"600", ",", "300"}], "}"}]}], ",", 
+     RowBox[{"Epilog", "\[Rule]", "labelAll"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"s", ",", ".3", ",", "\"\<savings rate \[Gamma]\>\""}], "}"}], 
+     ",", ".05", ",", " ", ".5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\[Delta]", ",", ".02", ",", "\"\<depreciation rate \[Delta]\>\""}], 
+      "}"}], ",", ".015", ",", " ", ".1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"range", ",", "600", ",", "\"\<plot range\>\""}], "}"}], ",", 
+     "150", ",", " ", "7000", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Button", "[", 
+    RowBox[{"\"\<reset\>\"", ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"s", "=", ".3"}], ",", 
+        RowBox[{"\[Delta]", "=", ".02"}], ",", " ", 
+        RowBox[{"a", "=", "1"}], ",", " ", 
+        RowBox[{"range", "=", "600"}], ",", " ", 
+        RowBox[{"default", "=", "False"}]}], "}"}], "&"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"AutorunSequencing", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", "3"}], "}"}]}]}], " ", "]"}]}], "Input",
+ CellChangeTimes->{
+  3.7072177793589363`*^9, {3.707231609366642*^9, 3.707231684621138*^9}, 
+   3.7072317273403378`*^9, {3.707231779130712*^9, 3.707231816071906*^9}, {
+   3.7072319361894293`*^9, 3.707231944015648*^9}, {3.7072319914354897`*^9, 
+   3.707231994880443*^9}, {3.7072320283016*^9, 3.7072320535169897`*^9}, 
+   3.707232356878034*^9, {3.707232394020259*^9, 3.7072323955722017`*^9}, {
+   3.707232436811055*^9, 3.707232466523172*^9}, {3.707232507247264*^9, 
+   3.707232519019519*^9}, {3.7072326277459517`*^9, 3.707232652637863*^9}, {
+   3.707232748820491*^9, 3.707232752192952*^9}, {3.707232789319026*^9, 
+   3.707232793572768*^9}, {3.707232832048386*^9, 3.707232834522861*^9}, {
+   3.707232875013001*^9, 3.707232908911851*^9}, {3.7072330492594347`*^9, 
+   3.707233084734365*^9}, {3.707233208590485*^9, 3.70723321943406*^9}, {
+   3.707233292471149*^9, 3.7072332981847982`*^9}, {3.7072333286606417`*^9, 
+   3.707233435476613*^9}, 3.707244964528124*^9, 3.707245237456841*^9, {
+   3.707245299811483*^9, 3.7072453020702267`*^9}},
+ CellLabel->
+  "In[355]:=",ExpressionUUID->"ce0f6113-fe77-4293-8b3d-85e4cdde4aa3"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`range$$ = 600, $CellContext`s$$ = 
+    0.3, $CellContext`\[Delta]$$ = 0.02, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`s$$], 0.3, "savings rate \[Gamma]"}, 0.05, 0.5}, {{
+       Hold[$CellContext`\[Delta]$$], 0.02, "depreciation rate \[Delta]"}, 
+      0.015, 0.1}, {{
+       Hold[$CellContext`range$$], 600, "plot range"}, 150, 7000}, {
+      Hold[
+       Button[
+       "reset", {$CellContext`s$$ = 0.3, $CellContext`\[Delta]$$ = 
+         0.02, $CellContext`a = 1, $CellContext`range$$ = 
+         600, $CellContext`default = False}& ]], 
+      Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
+    600., {148., 152.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`s$334676$$ = 
+    0, $CellContext`\[Delta]$334677$$ = 0, $CellContext`range$334678$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`range$$ = 600, $CellContext`s$$ = 
+        0.3, $CellContext`\[Delta]$$ = 0.02}, "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$334676$$, 0], 
+        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$334677$$, 0], 
+        Hold[$CellContext`range$$, $CellContext`range$334678$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[{
+          
+          Tooltip[$CellContext`\[Delta]$$ $CellContext`k, 
+           "Depreciation = \[Delta] k"], 
+          Tooltip[$CellContext`a $CellContext`k^0.5, 
+           Row[{"Output = ", 
+             Style["\!\(\*SqrtBox[\(k\)]\)", Italic]}]], 
+          Tooltip[($CellContext`s$$ $CellContext`a) $CellContext`k^0.5, 
+           Row[{"Investment = ", 
+             Style[
+             "\[Gamma] \!\(\*SqrtBox[\(k\)]\)", Italic]}]]}, {$CellContext`k, 
+          0, $CellContext`range$$}, PlotStyle -> {{
+            Thickness[0.005], 
+            RGBColor[0.25, 0.43, 0.82]}, {
+            Thickness[0.005], 
+            RGBColor[0.6, 0.73, 0.36]}, {
+            Thickness[0.005], 
+            RGBColor[0.49, 0, 0]}}, 
+         PlotRange -> {{-70, $CellContext`range$$}, {-9.9, 37}}, 
+         Filling -> {1 -> {{3}, {{
+               Opacity[0.2], Green}, {
+               Opacity[0.2], Red}}}}], 
+        Graphics[{
+          
+          Point[{$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2), ($CellContext`s$$ \
+$CellContext`a^2) ($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}], 
+          Style[
+           Text[
+            TableForm[
+             
+             Row[{"\!\(\*SuperscriptBox[\(k\), \(*\)]\)= ", $CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)}]], {$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2), -5}], {12, Bold}], 
+          Style[
+           Text[
+            Row[{"Capital"}], {550, -8}], 11], 
+          Style[
+           Text[
+            Row[{"Output"}], {-47, 36}], 11], 
+          Thickness[0.0025], Dotted, 
+          
+          Line[{{$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2), 
+             0}, {$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2), $CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}}], 
+          Darker[Yellow, 0.3], 
+          Tooltip[
+           
+           Line[{{0, ($CellContext`s$$ $CellContext`a^2) \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}, {$CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2), ($CellContext`s$$ \
+$CellContext`a^2) ($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}}], 
+           "STEADY-STATE -> Investment = Depreciation"], 
+          Style[
+           Text[
+           "I ", {-50, ($CellContext`s$$ $CellContext`a^2) \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}], {Bold, 12, 
+            RGBColor[0.49, 0, 0]}], 
+          Style[
+           Text[
+           "= D", {-33, ($CellContext`s$$ $CellContext`a^2) \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}], {Bold, 12, 
+            RGBColor[0.25, 0.43, 0.82]}], 
+          Style[
+           Text[
+           "Y=\!\(\*SqrtBox[\(k\)]\)", {-30, $CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}], {Bold, 12, 
+            RGBColor[0.6, 0.73, 0.36]}], 
+          Tooltip[
+           
+           Line[{{0, $CellContext`a^2 ($CellContext`s$$^2/$CellContext`\
+\[Delta]$$^2)^0.5}, {$CellContext`a^2 ($CellContext`s$$^2/$CellContext`\
+\[Delta]$$^2), $CellContext`a^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}}], "steady-state Y"]}], 
+        ImageSize -> {600, 300}, Epilog -> $CellContext`labelAll], 
+      "Specifications" :> {{{$CellContext`s$$, 0.3, "savings rate \[Gamma]"}, 
+         0.05, 0.5, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Delta]$$, 0.02, 
+          "depreciation rate \[Delta]"}, 0.015, 0.1, Appearance -> 
+         "Labeled"}, {{$CellContext`range$$, 600, "plot range"}, 150, 7000, 
+         Appearance -> "Labeled"}, 
+        Button[
+        "reset", {$CellContext`s$$ = 0.3, $CellContext`\[Delta]$$ = 
+          0.02, $CellContext`a = 1, $CellContext`range$$ = 
+          600, $CellContext`default = False}& ]}, 
+      "Options" :> {AutorunSequencing -> {1, 2, 3}}, "DefaultOptions" :> {}],
+     ImageSizeCache->{645., {236., 242.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.707231588303092*^9, 3.707231729812985*^9, {3.707231797121676*^9, 
+   3.707231817493093*^9}, {3.7072320395019417`*^9, 3.707232056305451*^9}, 
+   3.707232656189577*^9, 3.707232753098559*^9, 3.707232795308054*^9, 
+   3.7072329104718103`*^9, 3.707233056544776*^9, 3.707233089676889*^9, 
+   3.707233376507609*^9, 3.707233447296135*^9, 3.707245014013055*^9, 
+   3.7072453064058332`*^9},
+ CellLabel->
+  "Out[357]=",ExpressionUUID->"5c35f893-ab19-42b3-a616-0b3e830d1832"]
+}, {2}]],
+
+Cell["\<\
+Notice how the higher the savings, the further away the steady state goes, \
+and the longer a country continues to grow. The inverse happens when \
+depreciation goes up. Because depreciation is a constant ratio of capital \
+level, unless capital grows continuously, depreciation will catch up with the \
+decreasing rate of return to capital. Is there a way for countries to escape \
+the steady-state fate? Can a country continue to grow with the same level of \
+capital and a linear depreciation rate? The good new is yes! As ideas come \
+into play in our graph, it will be possible to visualize just that.\
+\>", "Text",
+ CellChangeTimes->{{3.705104661930198*^9, 3.705104689215759*^9}, {
+   3.7051047393916287`*^9, 3.705104783753166*^9}, {3.7051049729169855`*^9, 
+   3.7051050045267935`*^9}, {3.705169822193218*^9, 3.705169825188218*^9}, {
+   3.7072362156686993`*^9, 3.707236284540841*^9}, {3.707236412653677*^9, 
+   3.7072364743343143`*^9}, {3.707236505093564*^9, 3.707236736070198*^9}, 
+   3.7072368069099073`*^9},
+ TextJustification->1.,ExpressionUUID->"09743dff-0a0c-4dad-a48c-14c028f2917d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Importance of Ideas for Continuous Growth ", "Section",
+ CellChangeTimes->{{3.70510464885445*^9, 3.7051046548567934`*^9}, {
+  3.7051046932679906`*^9, 3.7051047014174566`*^9}, {3.705686116931855*^9, 
+  3.7056861543411007`*^9}, {3.707236745469524*^9, 3.707236767975065*^9}, {
+  3.70724506505315*^9, 
+  3.7072450660291777`*^9}},ExpressionUUID->"bb587d76-c814-4964-ad97-\
+700359e1c57c"],
+
+Cell["\<\
+The concept of \[OpenCurlyDoubleQuote]Ideas\[CloseCurlyDoubleQuote] is \
+commonly refer to as productivity, and conveys the ability to extract more \
+economic output with equal or less input (capital). This is achieved by \
+reengineering the productive process in creative ways that are not capital \
+consuming. Henry Ford is an example of how good ideas sustain productivity, \
+as he integrated operational steps from other industries (such as meat \
+packing, bicycle making and brewery) into car-making, he changed the \
+industry. Another example comes from hospital management reforms that lower \
+hospital infections and average care related costs per patients.
+
+See for your self how without changing the values of capital or depreciation, \
+the steady state can still be pushed away and a country can continue to grow, \
+solely based on the power of good ideas:\
+\>", "Text",
+ CellChangeTimes->{{3.705105405379721*^9, 3.7051054963769255`*^9}, {
+  3.705105533220033*^9, 3.705105546902816*^9}, {3.7051057273781385`*^9, 
+  3.7051057494323997`*^9}, {3.705169934558218*^9, 3.705169973362218*^9}, {
+  3.707237454195551*^9, 3.7072376929147263`*^9}, {3.707237792740782*^9, 
+  3.707237864394809*^9}, {3.707237895818458*^9, 3.707238027380649*^9}, {
+  3.707238061441944*^9, 3.707238221959112*^9}},
+ TextJustification->1.,ExpressionUUID->"65b3d8bc-c186-4102-b892-958ca845c35e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"If", "[", 
+     RowBox[{"default", ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"s", "=", ".3"}], ",", 
+        RowBox[{"\[Delta]", "=", ".02"}], ",", " ", 
+        RowBox[{"a", "=", "1"}], ",", " ", 
+        RowBox[{"range", "=", "600"}], ",", " ", 
+        RowBox[{"default", "=", "False"}]}], "}"}], ",", "Null"}], "]"}], ";", 
+    RowBox[{"Show", "[", 
+     RowBox[{
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Tooltip", "[", 
+           RowBox[{
+            RowBox[{"\[Delta]", " ", "k"}], ",", " ", 
+            "\"\<Depreciation = \[Delta] k\>\""}], "]"}], ",", " ", 
+          RowBox[{"Tooltip", "[", 
+           RowBox[{
+            RowBox[{"a", " ", 
+             RowBox[{"k", "^", ".5"}]}], ",", 
+            RowBox[{"Row", "[", 
+             RowBox[{"{", 
+              RowBox[{"\"\<Output = A\>\"", ",", 
+               RowBox[{"Style", "[", 
+                RowBox[{"\"\<\!\(\*SqrtBox[\(k\)]\)\>\"", ",", "Italic"}], 
+                "]"}]}], "}"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Tooltip", "[", 
+           RowBox[{
+            RowBox[{"s", " ", "a", " ", 
+             RowBox[{"k", "^", ".5"}]}], ",", 
+            RowBox[{"Row", "[", 
+             RowBox[{"{", 
+              RowBox[{"\"\<Investment = \>\"", ",", 
+               RowBox[{"Style", "[", 
+                RowBox[{
+                "\"\<\[Gamma] A\!\(\*SqrtBox[\(k\)]\)\>\"", ",", "Italic"}], 
+                "]"}]}], "}"}], "]"}]}], "]"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"k", ",", "0", ",", " ", "range"}], "}"}], ",", " ", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Thickness", "[", ".005", "]"}], ",", 
+             RowBox[{"RGBColor", "[", 
+              RowBox[{".25", ",", ".43", ",", ".82"}], "]"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Thickness", "[", ".005", "]"}], ",", 
+             RowBox[{"RGBColor", "[", 
+              RowBox[{".6", ",", ".73", ",", ".36"}], "]"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Thickness", "[", ".005", "]"}], ",", 
+             RowBox[{"RGBColor", "[", 
+              RowBox[{".49", ",", "0", ",", "0"}], "]"}]}], "}"}]}], "}"}]}], 
+        ",", " ", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "70"}], ",", " ", "range"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "9.9"}], ",", "37"}], "}"}]}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Filling", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"1", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", "3", "}"}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Opacity", "[", "0.2", "]"}], ",", "Green"}], "}"}], 
+               ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Opacity", "[", "0.2", "]"}], ",", " ", "Red"}], 
+                "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Point", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"a", "^", "2"}], 
+             FractionBox[
+              RowBox[{" ", 
+               SuperscriptBox["s", "2"]}], 
+              SuperscriptBox["\[Delta]", "2"]]}], ",", 
+            RowBox[{"s", " ", 
+             RowBox[{"a", "^", "2"}], 
+             SuperscriptBox[
+              RowBox[{"(", 
+               FractionBox[
+                SuperscriptBox["s", "2"], 
+                SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], "}"}], 
+          "]"}], ",", 
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"TableForm", "[", 
+              RowBox[{"Row", "[", 
+               RowBox[{"{", 
+                RowBox[{"\"\<\!\(\*SuperscriptBox[\(k\), \(*\)]\)= \>\"", ",", 
+                 RowBox[{
+                  RowBox[{"a", "^", "2"}], 
+                  FractionBox[
+                   RowBox[{" ", 
+                    SuperscriptBox["s", "2"]}], 
+                   SuperscriptBox["\[Delta]", "2"]]}]}], "}"}], "]"}], "]"}], 
+             ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"a", "^", "2"}], " ", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"s", "^", "2"}], ")"}], "/", 
+                 RowBox[{"\[Delta]", "^", "2"}]}]}], ",", 
+               RowBox[{"-", "5"}]}], "}"}]}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"12", ",", "Bold"}], "}"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"{", "\"\<Capital\>\"", "}"}], "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"550", ",", 
+               RowBox[{"-", "8"}]}], "}"}]}], "]"}], ",", "11"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"{", "\"\<Output\>\"", "}"}], "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "47"}], ",", "36"}], "}"}]}], "]"}], ",", "11"}], 
+          "]"}], " ", ",", 
+         RowBox[{"Thickness", "[", ".0025", "]"}], ",", "Dotted", ",", 
+         "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"a", "^", "2"}], 
+               FractionBox[
+                RowBox[{" ", 
+                 SuperscriptBox["s", "2"]}], 
+                SuperscriptBox["\[Delta]", "2"]]}], ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"a", "^", "2"}], 
+               FractionBox[
+                RowBox[{" ", 
+                 SuperscriptBox["s", "2"]}], 
+                SuperscriptBox["\[Delta]", "2"]]}], ",", " ", 
+              RowBox[{
+               RowBox[{"a", "^", "2"}], 
+               SuperscriptBox[
+                RowBox[{"(", 
+                 FractionBox[
+                  SuperscriptBox["s", "2"], 
+                  SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+             "}"}]}], "}"}], "]"}], ",", 
+         RowBox[{"Darker", "[", 
+          RowBox[{"Yellow", ",", ".3"}], "]"}], ",", " ", 
+         RowBox[{"Tooltip", "[", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0", ",", 
+                RowBox[{"s", " ", 
+                 RowBox[{"a", "^", "2"}], " ", 
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   FractionBox[
+                    SuperscriptBox["s", "2"], 
+                    SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+               "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"a", "^", "2"}], 
+                 FractionBox[
+                  RowBox[{" ", 
+                   SuperscriptBox["s", "2"]}], 
+                  SuperscriptBox["\[Delta]", "2"]]}], ",", " ", 
+                RowBox[{"s", " ", 
+                 RowBox[{"a", "^", "2"}], 
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   FractionBox[
+                    SuperscriptBox["s", "2"], 
+                    SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+               "}"}]}], "}"}], "]"}], ",", 
+           "\"\<STEADY-STATE -> Investment = Depreciation\>\""}], " ", " ", 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{"\"\<I \>\"", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "50"}], ",", 
+               RowBox[{"s", " ", 
+                RowBox[{"a", "^", "2"}], 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  FractionBox[
+                   SuperscriptBox["s", "2"], 
+                   SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+              "}"}]}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"Bold", ",", "12", ",", " ", 
+             RowBox[{"RGBColor", "[", 
+              RowBox[{".49", ",", "0", ",", "0"}], "]"}]}], "}"}]}], "]"}], 
+         ",", "\[IndentingNewLine]", 
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{"\"\<= D\>\"", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "33"}], ",", 
+               RowBox[{"s", " ", 
+                RowBox[{"a", "^", "2"}], 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  FractionBox[
+                   SuperscriptBox["s", "2"], 
+                   SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+              "}"}]}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"Bold", ",", "12", ",", " ", 
+             RowBox[{"RGBColor", "[", 
+              RowBox[{".25", ",", ".43", ",", ".82"}], "]"}]}], "}"}]}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{"\"\<Y = A\!\(\*SqrtBox[\(k\)]\)\>\"", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "30"}], ",", 
+               RowBox[{
+                RowBox[{"a", "^", "2"}], 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  FractionBox[
+                   SuperscriptBox["s", "2"], 
+                   SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+              "}"}]}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"Bold", ",", "12", ",", " ", 
+             RowBox[{"RGBColor", "[", 
+              RowBox[{".6", ",", ".73", ",", ".36"}], "]"}]}], "}"}]}], "]"}],
+          ",", "\[IndentingNewLine]", 
+         RowBox[{"Tooltip", "[", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0", ",", 
+                RowBox[{
+                 RowBox[{"a", "^", "2"}], 
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   FractionBox[
+                    SuperscriptBox["s", "2"], 
+                    SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+               "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"a", "^", "2"}], 
+                 FractionBox[
+                  RowBox[{" ", 
+                   SuperscriptBox["s", "2"]}], 
+                  SuperscriptBox["\[Delta]", "2"]]}], ",", " ", 
+                RowBox[{
+                 RowBox[{"a", "^", "2"}], " ", 
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   FractionBox[
+                    SuperscriptBox["s", "2"], 
+                    SuperscriptBox["\[Delta]", "2"]], ")"}], "0.5"]}]}], 
+               "}"}]}], "}"}], "]"}], ",", "\"\<steady-state Y\>\""}], " ", 
+          "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"600", ",", "300"}], "}"}]}], ",", 
+      RowBox[{"Epilog", "\[Rule]", "labelAll"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"s", ",", ".3", ",", "\"\<Savings Rate \[Gamma]\>\""}], "}"}], 
+     ",", ".05", ",", " ", ".5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\[Delta]", ",", ".02", ",", "\"\<Depreciation Rate \[Delta]\>\""}], 
+      "}"}], ",", ".015", ",", " ", ".1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "1", ",", "\"\<Technology A\>\""}], "}"}], ",", "1", 
+     ",", " ", "1.5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"range", ",", "600", ",", "\"\<Plot Range\>\""}], "}"}], ",", 
+     "150", ",", " ", "7000", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Button", "[", 
+    RowBox[{"\"\<reset\>\"", ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"s", "=", ".3"}], ",", 
+        RowBox[{"\[Delta]", "=", ".02"}], ",", " ", 
+        RowBox[{"a", "=", "1"}], ",", " ", 
+        RowBox[{"range", "=", "600"}], ",", " ", 
+        RowBox[{"default", "=", "False"}]}], "}"}], "&"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"AutorunSequencing", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", "3"}], "}"}]}]}], " ", "]"}]], "Input",
+ CellChangeTimes->{{3.707238301398478*^9, 3.7072383295272083`*^9}, {
+   3.70723837034026*^9, 3.707238381205374*^9}, {3.707238419090773*^9, 
+   3.707238422342802*^9}, {3.7072384954143887`*^9, 3.707238526383773*^9}, 
+   3.707238558261105*^9, {3.707238588541649*^9, 3.707238635072905*^9}, {
+   3.707238688881165*^9, 3.7072386897256536`*^9}, {3.707238808424102*^9, 
+   3.707238813071268*^9}, 3.707245344331511*^9},
+ CellLabel->
+  "In[358]:=",ExpressionUUID->"eb062a57-f884-4dc2-a55a-1c2f2e27fdca"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 1, $CellContext`range$$ = 
+    600, $CellContext`s$$ = 0.3, $CellContext`\[Delta]$$ = 0.02, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`s$$], 0.3, "Savings Rate \[Gamma]"}, 0.05, 0.5}, {{
+       Hold[$CellContext`\[Delta]$$], 0.02, "Depreciation Rate \[Delta]"}, 
+      0.015, 0.1}, {{
+       Hold[$CellContext`a$$], 1, "Technology A"}, 1, 1.5}, {{
+       Hold[$CellContext`range$$], 600, "Plot Range"}, 150, 7000}, {
+      Hold[
+       Button[
+       "reset", {$CellContext`s$$ = 0.3, $CellContext`\[Delta]$$ = 
+         0.02, $CellContext`a$$ = 1, $CellContext`range$$ = 
+         600, $CellContext`default = False}& ]], 
+      Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
+    600., {148., 152.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`s$334909$$ = 
+    0, $CellContext`\[Delta]$334910$$ = 0, $CellContext`a$334911$$ = 
+    0, $CellContext`range$334912$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`range$$ = 
+        600, $CellContext`s$$ = 0.3, $CellContext`\[Delta]$$ = 0.02}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$334909$$, 0], 
+        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$334910$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$334911$$, 0], 
+        Hold[$CellContext`range$$, $CellContext`range$334912$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> (
+       If[$CellContext`default, {$CellContext`s$$ = 
+          0.3, $CellContext`\[Delta]$$ = 0.02, $CellContext`a$$ = 
+          1, $CellContext`range$$ = 600, $CellContext`default = False}, Null]; 
+       Show[
+         Plot[{
+           
+           Tooltip[$CellContext`\[Delta]$$ $CellContext`k, 
+            "Depreciation = \[Delta] k"], 
+           Tooltip[$CellContext`a$$ $CellContext`k^0.5, 
+            Row[{"Output = A", 
+              Style["\!\(\*SqrtBox[\(k\)]\)", Italic]}]], 
+           Tooltip[($CellContext`s$$ $CellContext`a$$) $CellContext`k^0.5, 
+            Row[{"Investment = ", 
+              Style[
+              "\[Gamma] A\!\(\*SqrtBox[\(k\)]\)", 
+               Italic]}]]}, {$CellContext`k, 0, $CellContext`range$$}, 
+          PlotStyle -> {{
+             Thickness[0.005], 
+             RGBColor[0.25, 0.43, 0.82]}, {
+             Thickness[0.005], 
+             RGBColor[0.6, 0.73, 0.36]}, {
+             Thickness[0.005], 
+             RGBColor[0.49, 0, 0]}}, 
+          PlotRange -> {{-70, $CellContext`range$$}, {-9.9, 37}}, 
+          Filling -> {1 -> {{3}, {{
+                Opacity[0.2], Green}, {
+                Opacity[0.2], Red}}}}], 
+         Graphics[{
+           
+           Point[{$CellContext`a$$^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2), ($CellContext`s$$ \
+$CellContext`a$$^2) ($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}], 
+           Style[
+            Text[
+             TableForm[
+              
+              Row[{"\!\(\*SuperscriptBox[\(k\), \(*\)]\)= ", \
+$CellContext`a$$^2 ($CellContext`s$$^2/$CellContext`\[Delta]$$^2)}]], \
+{$CellContext`a$$^2 ($CellContext`s$$^2/$CellContext`\[Delta]$$^2), -5}], {
+            12, Bold}], 
+           Style[
+            Text[
+             Row[{"Capital"}], {550, -8}], 11], 
+           Style[
+            Text[
+             Row[{"Output"}], {-47, 36}], 11], 
+           Thickness[0.0025], Dotted, 
+           
+           Line[{{$CellContext`a$$^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2), 
+              0}, {$CellContext`a$$^2 ($CellContext`s$$^2/$CellContext`\
+\[Delta]$$^2), $CellContext`a$$^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}}], 
+           Darker[Yellow, 0.3], 
+           Tooltip[
+            
+            Line[{{0, ($CellContext`s$$ $CellContext`a$$^2) \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}, {$CellContext`a$$^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2), ($CellContext`s$$ \
+$CellContext`a$$^2) ($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}}], 
+            "STEADY-STATE -> Investment = Depreciation"], 
+           Style[
+            Text[
+            "I ", {-50, ($CellContext`s$$ $CellContext`a$$^2) \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}], {Bold, 12, 
+             RGBColor[0.49, 0, 0]}], 
+           Style[
+            Text[
+            "= D", {-33, ($CellContext`s$$ $CellContext`a$$^2) \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}], {Bold, 12, 
+             RGBColor[0.25, 0.43, 0.82]}], 
+           Style[
+            Text[
+            "Y = A\!\(\*SqrtBox[\(k\)]\)", {-30, $CellContext`a$$^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}], {Bold, 12, 
+             RGBColor[0.6, 0.73, 0.36]}], 
+           Tooltip[
+            
+            Line[{{0, $CellContext`a$$^2 ($CellContext`s$$^2/$CellContext`\
+\[Delta]$$^2)^0.5}, {$CellContext`a$$^2 ($CellContext`s$$^2/$CellContext`\
+\[Delta]$$^2), $CellContext`a$$^2 \
+($CellContext`s$$^2/$CellContext`\[Delta]$$^2)^0.5}}], "steady-state Y"]}], 
+         ImageSize -> {600, 300}, Epilog -> $CellContext`labelAll]), 
+      "Specifications" :> {{{$CellContext`s$$, 0.3, "Savings Rate \[Gamma]"}, 
+         0.05, 0.5, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Delta]$$, 0.02, 
+          "Depreciation Rate \[Delta]"}, 0.015, 0.1, Appearance -> 
+         "Labeled"}, {{$CellContext`a$$, 1, "Technology A"}, 1, 1.5, 
+         Appearance -> "Labeled"}, {{$CellContext`range$$, 600, "Plot Range"},
+          150, 7000, Appearance -> "Labeled"}, 
+        Button[
+        "reset", {$CellContext`s$$ = 0.3, $CellContext`\[Delta]$$ = 
+          0.02, $CellContext`a$$ = 1, $CellContext`range$$ = 
+          600, $CellContext`default = False}& ]}, 
+      "Options" :> {AutorunSequencing -> {1, 2, 3}}, "DefaultOptions" :> {}],
+     ImageSizeCache->{645., {250., 256.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.7072383038856688`*^9, 3.707238337630827*^9, 
+  3.707238424153446*^9, 3.707238528045168*^9, 3.707238590449585*^9, 
+  3.7072386370740337`*^9, 3.7072388146295033`*^9, 3.707245346236755*^9},
+ CellLabel->
+  "Out[358]=",ExpressionUUID->"561be0f9-a4b6-475b-b5af-b1fb6bff19e4"]
+}, {2}]],
+
+Cell["\<\
+Topic explorations based on demonstration by Alex Tabarrok: \
+http://demonstrations.wolfram.com/SimpleSolowModel/\
+\>", "Direction",
+ CellChangeTimes->{{3.707238920766375*^9, 
+  3.707238992941119*^9}},ExpressionUUID->"ba862c46-86bd-4678-9eeb-\
+68273ae0dd50"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Further Explorations", "FurtherExplorationSection",
+ CellChangeTimes->{{3.70077612322993*^9, 3.7007761320921593`*^9}, {
+  3.7007787731699142`*^9, 
+  3.70077877480995*^9}},ExpressionUUID->"e6bf2ad2-ed64-47c7-a572-\
+920ff9c6c9f8"],
+
+Cell["Entrepreneurship and Ideas", "FurtherExploration",
+ CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
+  3.705104213701561*^9, 3.7051042224510612`*^9}, {3.7051697227932177`*^9, 
+  3.7051697367862177`*^9}, {3.7056847753333597`*^9, 3.7056847788413363`*^9}, {
+  3.705686193025524*^9, 3.7056861967297907`*^9}, {3.707239059183977*^9, 
+  3.707239072153285*^9}},ExpressionUUID->"50227f72-7de4-4d61-911c-\
+7e776f9dd25e"],
+
+Cell["Technological Development", "FurtherExploration",
+ CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
+  3.705104213701561*^9, 3.7051042224510612`*^9}, {3.705105582902875*^9, 
+  3.7051055862950687`*^9}, {3.705686185124048*^9, 3.705686188552953*^9}, {
+  3.707239177837632*^9, 
+  3.707239225586503*^9}},ExpressionUUID->"14baa0d7-4ca3-438c-9905-\
+b6b73120f422"],
+
+Cell["Education and Human Capital", "FurtherExploration",
+ CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
+  3.705104213701561*^9, 3.7051042224510612`*^9}, {3.705105582902875*^9, 
+  3.7051055862950687`*^9}, {3.705686185124048*^9, 3.705686188552953*^9}, {
+  3.707239177837632*^9, 3.707239225586503*^9}, {3.707239303503132*^9, 
+  3.707239317469056*^9}},ExpressionUUID->"a3a9e044-ca91-461a-8139-\
+2edd1590cb6d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Authorship information", "AuthorshipSection",
+ CellChangeTimes->{{3.705105762145127*^9, 
+  3.7051057665253773`*^9}},ExpressionUUID->"5f29f7bc-3bb4-4298-ad15-\
+f12cdf6d84b5"],
+
+Cell["Mirian Lima", "Authorship",
+ CellChangeTimes->{{3.7051057700535793`*^9, 3.7051057808261957`*^9}, {
+  3.707238870114449*^9, 
+  3.707238872352009*^9}},ExpressionUUID->"ab1b0233-9252-4bcd-95b4-\
+92d9e62dd2ca"],
+
+Cell["23/06/2017", "Authorship",
+ CellChangeTimes->{{3.705105786521521*^9, 3.7051057998362827`*^9}, {
+  3.707238875751676*^9, 
+  3.707238887322834*^9}},ExpressionUUID->"7c40d848-ffd1-4c3f-a4e5-\
+a612672bafde"],
+
+Cell["mspencerlima@gmail.com", "Authorship",
+ CellChangeTimes->{{3.7051058070526953`*^9, 3.705105841815684*^9}, {
+  3.707238896450712*^9, 
+  3.707238903225972*^9}},ExpressionUUID->"afaa8c74-36c7-43c8-a9ac-\
+db1ac27e1480"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{890, 794},
+WindowMargins->{{Automatic, -2}, {Automatic, 0}},
+DockedCells->Cell[
+  BoxData[
+   TagBox[
+    GridBox[{{
+       ItemBox["\"\"", ItemSize -> 0.2, StripOnInput -> False], 
+       DynamicModuleBox[{}, 
+        ActionMenuBox[
+        "\"Insert\"", {
+         "\"Section\"" :> 
+          Module[{$CellContext`nb = ButtonNotebook[]}, 
+            Exploration`MoveCursorAfterCellPosition[$CellContext`nb]; 
+            NotebookWrite[$CellContext`nb, 
+              Cell[
+               CellGroupData[{
+                 Cell["XXXX", "Section"], 
+                 Cell["XXXX", "Text"], 
+                 Cell["XXXX", "Direction"], 
+                 Cell[
+                  BoxData["XXXX"], "Input"]}, Open]], All]; 
+            SelectionMove[$CellContext`nb, Before, Cell]; 
+            SelectionMove[$CellContext`nb, Next, Cell]; 
+            SelectionMove[$CellContext`nb, All, CellContents]], Delimiter, 
+          "\"Text\"" :> 
+          Module[{$CellContext`nb = ButtonNotebook[]}, 
+            Exploration`MoveCursorAfterCellPosition[$CellContext`nb]; 
+            NotebookWrite[$CellContext`nb, 
+              Cell["XXXX", "Text"], All]; 
+            SelectionMove[$CellContext`nb, All, CellContents]], 
+          "\"Direction\"" :> 
+          Module[{$CellContext`nb = ButtonNotebook[]}, 
+            Exploration`MoveCursorAfterCellPosition[$CellContext`nb]; 
+            NotebookWrite[$CellContext`nb, 
+              Cell["XXXX", "Direction"], All]; 
+            SelectionMove[$CellContext`nb, All, CellContents]], 
+          "\"Further Exploration\"" :> 
+          Module[{$CellContext`nb = ButtonNotebook[]}, 
+            Exploration`MoveCursorAfterCellPosition[$CellContext`nb]; 
+            NotebookWrite[$CellContext`nb, 
+              Cell["XXXX", "FurtherExploration"], All]; 
+            SelectionMove[$CellContext`nb, All, CellContents]]}, Method -> 
+         "Queued", Appearance -> "PopupMenu", FrameMargins -> 2.4], 
+        Initialization :> (Exploration`MoveCursorAfterCellPosition[
+           Pattern[$CellContext`nb, 
+            Blank[]]] := Which[
+           MatchQ[
+            Developer`CellInformation[$CellContext`nb], {
+             Repeated[{
+               BlankSequence[], "CursorPosition" -> "CellBracket", 
+               BlankSequence[]}]}], 
+           SelectionMove[$CellContext`nb, After, Cell], 
+           Developer`CellInformation[$CellContext`nb] =!= $Failed, 
+           Module[{$CellContext`lnkre}, 
+             While[(LinkWrite[$ParentLink, 
+                 
+                 FrontEnd`CellInformation[$CellContext`nb]]; \
+$CellContext`lnkre = LinkRead[$ParentLink]); 
+              And[$CellContext`lnkre =!= $Failed, 
+                Not[
+                 MemberQ[
+                  ReplaceAll["CursorPosition", $CellContext`lnkre], 
+                  "CellBracket"]]], 
+              FrontEndExecute[
+               
+               FrontEnd`SelectionMove[$CellContext`nb, All, Cell, AutoScroll -> 
+                False]]]]; SelectionMove[$CellContext`nb, After, Cell]]), 
+        DynamicModuleValues :> {}], 
+       ItemBox["\"\"", ItemSize -> Fit, StripOnInput -> False], 
+       ButtonBox["\"Sample\"", ButtonFunction :> NotebookOpen[
+          
+          FileNameJoin[{$UserBaseDirectory, "Applications", 
+            "SummerSchoolTemplates", "FrontEnd", "TextResources", 
+            "TopicExplorationExample.nb"}]], Appearance -> Automatic, 
+        Evaluator -> Automatic, Method -> "Queued"]}}, AutoDelete -> False, 
+     GridBoxItemSize -> {
+      "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"]], 
+  "DockedCell"],
+CellLabelAutoDelete->False,
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
+2017)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell[
+    StyleData["Title"], FontFamily -> "Source Sans Pro", FontTracking -> -0.8,
+     FontColor -> RGBColor[0.65, 0, 0]], 
+   Cell[
+    StyleData["Abstract", StyleDefinitions -> StyleData["Text"]], FontSize -> 
+    16, FontSlant -> "Italic", FontColor -> GrayLevel[0.4]], 
+   Cell[
+    StyleData["Section"], CellFrame -> False, FontFamily -> "Source Sans Pro",
+     FontTracking -> -0.5, $CellContext`ReturnCreatesNewCell -> 
+    True, $CellContext`DefaultReturnCreatedCellStyle -> "Text"], 
+   Cell[
+    StyleData["FurtherExplorationSection"], 
+    CellMargins -> {{28, Inherited}, {6, 24}}, 
+    CellGroupingRules -> {"SectionGrouping", 30}, DefaultNewCellStyle -> 
+    "FurtherExploration", FontFamily -> "Source Sans Pro Semibold", FontSize -> 
+    22, FontColor -> GrayLevel[0.35]], 
+   Cell[
+    StyleData["FurtherExploration", StyleDefinitions -> StyleData["Text"]], 
+    CellMargins -> {{66, 10}, {5, 5}}, FontSize -> 14, FontWeight -> "Bold", 
+    FontColor -> GrayLevel[0.5], $CellContext`ReturnCreatesNewCell -> True], 
+   Cell[
+    StyleData["AuthorshipSection"], CellMargins -> {{28, Inherited}, {6, 24}},
+     CellGroupingRules -> {"SectionGrouping", 30}, DefaultNewCellStyle -> 
+    "FurtherExploration", FontFamily -> "Source Sans Pro Semibold", FontSize -> 
+    22, FontColor -> GrayLevel[0.35]], 
+   Cell[
+    StyleData["Authorship", StyleDefinitions -> StyleData["Text"]], 
+    CellMargins -> {{66, 10}, {4, 4}}, FontSize -> 14, FontColor -> 
+    GrayLevel[0.5], $CellContext`ReturnCreatesNewCell -> True], 
+   Cell[
+    StyleData["Text"], DefaultNewCellStyle -> 
+    "Direction", $CellContext`ReturnCreatesNewCell -> 
+    True, $CellContext`DefaultReturnCreatedCellStyle -> "Direction"], 
+   Cell[
+    StyleData["Direction", StyleDefinitions -> StyleData["Text"]], 
+    CellDingbat -> 
+    StyleBox["\[FilledSmallSquare]", FontColor -> GrayLevel[0.7]], 
+    CellMargins -> {{78, 10}, {6, 7}}, CellFrameLabelMargins -> 4, 
+    MenuSortingValue -> 10000, MenuCommandKey -> "8", FontSize -> 14, 
+    FontWeight -> "Plain", FontColor -> 
+    GrayLevel[0.4], $CellContext`DefaultReturnCreatedCellStyle -> "Input"], 
+   Cell[
+    StyleData["Code"], MenuCommandKey -> None]}, Visible -> False, 
+  FrontEndVersion -> 
+  "11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, 2017)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 301, 5, 97, "Title", "ExpressionUUID" -> \
+"52bb8e3f-ba09-4fa5-9fef-a965494c54cf"],
+Cell[884, 29, 394, 6, 33, "Abstract", "ExpressionUUID" -> \
+"51b05cee-2620-4891-ae6f-1d5852e3a3ab"],
+Cell[CellGroupData[{
+Cell[1303, 39, 366, 6, 62, "Section", "ExpressionUUID" -> \
+"a32cd897-6768-43c3-89e4-ec2f609797ce"],
+Cell[1672, 47, 1291, 19, 49, "Text", "ExpressionUUID" -> \
+"3b903c3c-4ed2-4db4-b9b3-fe2e28b0923c"],
+Cell[CellGroupData[{
+Cell[2988, 70, 278, 5, 32, "Input", "ExpressionUUID" -> \
+"23288dc8-1316-4096-ae13-890903a41d85"],
+Cell[3269, 77, 207, 5, 44, "Output", "ExpressionUUID" -> \
+"0fdef915-7feb-43aa-92b5-7d6f906736dd"]
+}, {2}]],
+Cell[3488, 85, 294, 5, 49, "Text", "ExpressionUUID" -> \
+"1763d6fb-7c74-4dc0-8e63-eeeb9794272c"],
+Cell[CellGroupData[{
+Cell[3807, 94, 233, 4, 44, "Subsection", "ExpressionUUID" -> \
+"dedde65f-aebf-4b76-a6c8-84b14719af5b"],
+Cell[4043, 100, 1326, 24, 144, "Text", "ExpressionUUID" -> \
+"2e6e0bdf-e3a5-49eb-b105-1cae08bd95f3"],
+Cell[CellGroupData[{
+Cell[5394, 128, 290, 5, 40, "Input", "ExpressionUUID" -> \
+"a5ed3482-92d5-4ca8-bf5c-1b6f006db0b1"],
+Cell[5687, 135, 274, 6, 45, "Output", "ExpressionUUID" -> \
+"6b6438f4-3b14-44c1-9782-4df2fc748dc4"]
+}, {2}]],
+Cell[5973, 144, 327, 10, 34, "Text", "ExpressionUUID" -> \
+"c5d60a32-3936-4007-8a74-8188574eb759"],
+Cell[CellGroupData[{
+Cell[6325, 158, 9530, 249, 708, "Input", "ExpressionUUID" -> \
+"20cf231d-d3e5-4164-b029-bb17f0b1fd71"],
+Cell[15858, 409, 3995, 89, 467, "Output", "ExpressionUUID" -> \
+"a1f3c3cb-ace4-4b2b-a797-da23020c1dd4"]
+}, {2}]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19899, 504, 279, 4, 44, "Subsection", "ExpressionUUID" -> \
+"1f26a3db-c62e-44fd-accc-f7dfe8a81071"],
+Cell[20181, 510, 2059, 31, 258, "Text", "ExpressionUUID" -> \
+"8e540382-cd85-4d2a-b4fd-a209ac3a3175"],
+Cell[CellGroupData[{
+Cell[22265, 545, 18697, 474, 1308, "Input", "ExpressionUUID" -> \
+"ce0f6113-fe77-4293-8b3d-85e4cdde4aa3"],
+Cell[40965, 1021, 6544, 140, 495, "Output", "ExpressionUUID" -> \
+"5c35f893-ab19-42b3-a616-0b3e830d1832"]
+}, {2}]],
+Cell[47521, 1164, 1105, 16, 106, "Text", "ExpressionUUID" -> \
+"09743dff-0a0c-4dad-a48c-14c028f2917d"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48675, 1186, 392, 6, 62, "Section", "ExpressionUUID" -> \
+"bb587d76-c814-4964-ad97-700359e1c57c"],
+Cell[49070, 1194, 1381, 21, 163, "Text", "ExpressionUUID" -> \
+"65b3d8bc-c186-4102-b892-958ca845c35e"],
+Cell[CellGroupData[{
+Cell[50476, 1219, 14283, 370, 923, "Input", "ExpressionUUID" -> \
+"eb062a57-f884-4dc2-a55a-1c2f2e27fdca"],
+Cell[64762, 1591, 6991, 148, 523, "Output", "ExpressionUUID" -> \
+"561be0f9-a4b6-475b-b5af-b1fb6bff19e4"]
+}, {2}]],
+Cell[71765, 1742, 268, 6, 31, "Direction", "ExpressionUUID" -> \
+"ba862c46-86bd-4678-9eeb-68273ae0dd50"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72070, 1753, 234, 4, 59, "FurtherExplorationSection", "ExpressionUUID" \
+-> "e6bf2ad2-ed64-47c7-a572-920ff9c6c9f8"],
+Cell[72307, 1759, 437, 6, 26, "FurtherExploration", "ExpressionUUID" -> \
+"50227f72-7de4-4d61-911c-7e776f9dd25e"],
+Cell[72747, 1767, 382, 6, 26, "FurtherExploration", "ExpressionUUID" -> \
+"14baa0d7-4ca3-438c-9905-b6b73120f422"],
+Cell[73132, 1775, 430, 6, 26, "FurtherExploration", "ExpressionUUID" -> \
+"a3a9e044-ca91-461a-8139-2edd1590cb6d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73599, 1786, 179, 3, 59, "AuthorshipSection", "ExpressionUUID" -> \
+"5f29f7bc-3bb4-4298-ad15-f12cdf6d84b5"],
+Cell[73781, 1791, 212, 4, 24, "Authorship", "ExpressionUUID" -> \
+"ab1b0233-9252-4bcd-95b4-92d9e62dd2ca"],
+Cell[73996, 1797, 209, 4, 24, "Authorship", "ExpressionUUID" -> \
+"7c40d848-ffd1-4c3f-a4e5-a612672bafde"],
+Cell[74208, 1803, 221, 4, 24, "Authorship", "ExpressionUUID" -> \
+"afaa8c74-36c7-43c8-a9ac-db1ac27e1480"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
