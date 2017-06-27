@@ -1,0 +1,495 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16054,        485]
+NotebookOptionsPosition[     13091,        398]
+NotebookOutlinePosition[     13444,        414]
+CellTagsIndexPosition[     13401,        411]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Create web sites", "Title",
+ CellChangeTimes->{{3.70755706322731*^9, 
+  3.7075570725153427`*^9}},ExpressionUUID->"1a4b2eae-51a3-48c3-a10d-\
+301b494b109a"],
+
+Cell["ImageIdentify", "Subchapter",
+ CellChangeTimes->{{3.707557155879425*^9, 
+  3.707557158773347*^9}},ExpressionUUID->"88617fba-2b61-44a6-99a7-\
+9f4be9b21b35"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["FormFunction", "Title",
+ CellChangeTimes->{{3.707557170662174*^9, 
+  3.707557172436274*^9}},ExpressionUUID->"573fd104-e6fd-44ff-bdfd-\
+2ed09dd722b0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FormFunction", "[", 
+  RowBox[{"<|", 
+   RowBox[{"\"\<x\>\"", " ", "\[Rule]", " ", "\"\<String\>\""}], "|>"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.707557173850779*^9, 
+  3.707557188699628*^9}},ExpressionUUID->"b7d34743-d8c6-4a84-bbd1-\
+07f7ad69c93d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["FormFunction",
+    "SummaryHead"], "[", 
+   PanelBox[
+    DynamicModuleBox[{Forms`Format`PackagePrivate`values$$}, 
+     DynamicBox[ToBoxes[
+       If[
+        ValueQ[Forms`Format`PackagePrivate`values$$], 
+        Column[{
+          Panel[
+           Style[
+            Identity[Forms`Format`PackagePrivate`values$$], "Output", 
+            "StandardForm"], Background -> White], 
+          Item[
+           Row[{
+             Spacer[0], 
+             Button["Back", 
+              Clear[Forms`Format`PackagePrivate`values$$]]}], Alignment -> 
+           Right]}, Alignment -> Right], Forms`Format`PackagePrivate`values$$; 
+        Forms`PackageScope`bindForm[
+          Forms`PackageScope`changeAppearanceRule[
+           FormObject[
+            Association["x" -> Association["Interpreter" -> "String"]]], 
+           "CancelLabel" -> None], Forms`Format`PackagePrivate`values$$]], 
+       StandardForm],
+      ImageSizeCache->{253., {33.64208984375, 40.35791015625}},
+      TrackedSymbols:>{Forms`Format`PackagePrivate`values$$}],
+     DynamicModuleValues:>{}]], "]"}],
+  FormFunction[
+   FormObject[
+    Association["x" -> Association["Interpreter" -> "String"]]]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.707557189561942*^9},ExpressionUUID->"8d51e9cf-17c2-4c29-9795-\
+783686e66fed"]
+}, Open  ]],
+
+Cell["\<\
+Specify a default for a field; fields that have a default are not required :\
+\>", "Text",
+ CellChangeTimes->{{3.707557228514539*^9, 3.70755723017032*^9}},
+ CellID->783237056,ExpressionUUID->"53d39b3c-b605-4df1-a45d-9e1776ae5aad"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FormFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<first\>\"", "\[Rule]", "\"\<String\>\""}], ",", 
+      RowBox[{"\"\<second\>\"", "\[Rule]", 
+       RowBox[{"\"\<Number\>\"", "\[Rule]", "3"}]}]}], "}"}], ",", "f"}], 
+   "]"}], "[", 
+  RowBox[{"\"\<first\>\"", "\[Rule]", "\"\<str\>\""}], "]"}]], "Input",
+ CellID->126377989,ExpressionUUID->"061b0b15-e911-4f39-99b3-5d3c559bda2e"],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"first\"\>", "\[Rule]", "\<\"str\"\>"}], ",", 
+    RowBox[{"\<\"second\"\>", "\[Rule]", "3"}]}], "\[RightAssociation]"}], 
+  "]"}]], "Output",
+ ImageSize->{206, 18},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellID->1193193173,ExpressionUUID->"7afef80f-81ea-45b3-a551-87a1e66acad7"]
+}, Open  ]],
+
+Cell["Fields can be optional without having a default:", "Text",
+ CellID->248780633,ExpressionUUID->"18b03c90-6dfc-4794-a6e4-ed8bd823e259"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FormFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<first\>\"", "\[Rule]", "\"\<String\>\""}], ",", 
+      RowBox[{"\"\<second\>\"", "\[Rule]", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<Number\>\""}], ",", " ", 
+         RowBox[{"\"\<Required\>\"", "\[Rule]", " ", "False"}]}], "|>"}]}]}], 
+     "}"}], ",", "f"}], "]"}], "[", 
+  RowBox[{"\"\<first\>\"", "\[Rule]", "\"\<str\>\""}], "]"}]], "Input",
+ CellID->105438122,ExpressionUUID->"46341398-25de-4f53-8eb6-0cdcef122e7f"],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"first\"\>", "\[Rule]", "\<\"str\"\>"}], ",", 
+    RowBox[{"\<\"second\"\>", "\[Rule]", "None"}]}], "\[RightAssociation]"}], 
+  "]"}]], "Output",
+ ImageSize->{228, 18},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellID->941556664,ExpressionUUID->"ec42b66a-32b3-49e5-a8f2-1842f25641f1"]
+}, Open  ]],
+
+Cell["Use RuleDelayed to evaluate a new default every time:", "Text",
+ CellChangeTimes->{{3.707557257995508*^9, 3.707557261025403*^9}},
+ CellID->84309633,ExpressionUUID->"0653aaea-34cd-4c6e-9c33-83f99cb98477"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FormFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<name\>\"", "\[Rule]", "\"\<String\>\""}], ",", 
+      RowBox[{"\"\<date\>\"", "\[Rule]", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<DateTime\>\""}], ",", " ", 
+         
+         RowBox[{"\"\<Default\>\"", ":>", " ", 
+          RowBox[{"DateObject", "[", "]"}]}]}], "|>"}]}]}], "}"}], ",", "f"}],
+    "]"}], "[", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<name\>\"", " ", "\[Rule]", " ", "\"\<Bob\>\""}], ",", " ", 
+    RowBox[{"\"\<date\>\"", " ", "\[Rule]", " ", "None"}]}], "|>"}], 
+  "]"}]], "Input",
+ CellID->1510197904,ExpressionUUID->"79235d7d-10f8-48bb-8358-20fe42883df5"],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"name\"\>", "\[Rule]", "\<\"Bob\"\>"}], ",", 
+    RowBox[{"\<\"date\"\>", "\[Rule]", 
+     TemplateBox[{
+      RowBox[{"\"Tue 24 Jun 2014 14:57:05\""}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2014", ",", "6", ",", "24"}], "}"}], ",", 
+           RowBox[{"TimeObject", "[", 
+             RowBox[{"{", 
+               RowBox[{"14", ",", "57", ",", "5.698203`"}], "}"}], "]"}]}], 
+         "]"}]},
+      "DateObject",
+      Editable->False]}]}], "\[RightAssociation]"}], "]"}]], "Output",
+ ImageSize->{345, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellID->863940777,ExpressionUUID->"4da5d78f-e8d4-4cf2-9862-5ec8c61b1e53"]
+}, Open  ]],
+
+Cell["Create a form with input inside:", "Text",
+ CellID->657714689,ExpressionUUID->"5925df72-7866-46db-be93-9a6ec936409d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FormFunction", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<x\>\"", " ", "\[Rule]", " ", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Input\>\"", " ", ":>", " ", 
+      RowBox[{"RandomWord", "[", "]"}]}], "|>"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7075573056875677`*^9, 
+  3.7075573131589737`*^9}},ExpressionUUID->"16d21a27-0829-4a19-b305-\
+695c5c0d8826"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["FormFunction",
+    "SummaryHead"], "[", 
+   PanelBox[
+    DynamicModuleBox[{Forms`Format`PackagePrivate`values$$}, 
+     DynamicBox[ToBoxes[
+       If[
+        ValueQ[Forms`Format`PackagePrivate`values$$], 
+        Column[{
+          Panel[
+           Style[
+            Identity[Forms`Format`PackagePrivate`values$$], "Output", 
+            "StandardForm"], Background -> White], 
+          Item[
+           Row[{
+             Spacer[0], 
+             Button["Back", 
+              Clear[Forms`Format`PackagePrivate`values$$]]}], Alignment -> 
+           Right]}, Alignment -> Right], Forms`Format`PackagePrivate`values$$; 
+        Forms`PackageScope`bindForm[
+          Forms`PackageScope`changeAppearanceRule[
+           FormObject[
+            Association[
+            "x" -> Association[
+              "Input" :> RandomWord[], "Interpreter" -> "String"]]], 
+           "CancelLabel" -> None], Forms`Format`PackagePrivate`values$$]], 
+       StandardForm],
+      ImageSizeCache->{253., {33.64208984375, 40.35791015625}},
+      TrackedSymbols:>{Forms`Format`PackagePrivate`values$$}],
+     DynamicModuleValues:>{}]], "]"}],
+  FormFunction[
+   FormObject[
+    Association[
+    "x" -> Association["Input" :> RandomWord[], "Interpreter" -> "String"]]]],
+  
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.707557315610301*^9, 
+  3.707557318373434*^9}},ExpressionUUID->"6016c340-67d1-4189-b21f-\
+3affbb8eb959"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FormFunction", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<x\>\"", ",", " ", "\"\<First Name\>\""}], "}"}], " ", 
+   "\[Rule]", " ", "\"\<String\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.707557331773952*^9, 
+  3.70755733234797*^9}},ExpressionUUID->"f39d8588-414a-4524-8109-\
+89c76a33a156"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["FormFunction",
+    "SummaryHead"], "[", 
+   PanelBox[
+    DynamicModuleBox[{Forms`Format`PackagePrivate`values$$}, 
+     DynamicBox[ToBoxes[
+       If[
+        ValueQ[Forms`Format`PackagePrivate`values$$], 
+        Column[{
+          Panel[
+           Style[
+            Identity[Forms`Format`PackagePrivate`values$$], "Output", 
+            "StandardForm"], Background -> White], 
+          Item[
+           Row[{
+             Spacer[0], 
+             Button["Back", 
+              Clear[Forms`Format`PackagePrivate`values$$]]}], Alignment -> 
+           Right]}, Alignment -> Right], Forms`Format`PackagePrivate`values$$; 
+        Forms`PackageScope`bindForm[
+          Forms`PackageScope`changeAppearanceRule[
+           FormObject[
+            Association[
+            "x" -> Association[
+              "Interpreter" -> "String", "Label" -> "First Name"]]], 
+           "CancelLabel" -> None], Forms`Format`PackagePrivate`values$$]], 
+       StandardForm],
+      ImageSizeCache->{316., {33.64208984375, 40.35791015625}},
+      TrackedSymbols:>{Forms`Format`PackagePrivate`values$$}],
+     DynamicModuleValues:>{}]], "]"}],
+  FormFunction[
+   FormObject[
+    Association[
+    "x" -> Association["Interpreter" -> "String", "Label" -> "First Name"]]]],
+  
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.707557332727957*^9},ExpressionUUID->"e2238d58-a36e-432c-ba0b-\
+f1e008daa04e"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["GalleryView", "Title",
+ CellChangeTimes->{{3.7075577773880997`*^9, 
+  3.707557779106388*^9}},ExpressionUUID->"a924b8b2-aac2-4126-9bbc-\
+4471eb0644db"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$image", " ", ":=", " ", 
+   RowBox[{"ArrayPlot", "[", 
+    RowBox[{
+     RowBox[{"RandomReal", "[", 
+      RowBox[{"1", ",", 
+       RowBox[{"{", 
+        RowBox[{"10", ",", "20"}], "}"}]}], "]"}], ",", 
+     RowBox[{"ColorFunction", "\[Rule]", "\"\<Rainbow\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{"GalleryView", "[", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{"$image", ",", " ", "12"}], "]"}], ",", " ", 
+    RowBox[{"AppearanceRules", " ", "\[Rule]", " ", 
+     RowBox[{"<|", 
+      RowBox[{"\"\<Title\>\"", " ", "\[Rule]", " ", "\"\<Awesome\>\""}], 
+      "|>"}]}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7075578124592457`*^9, 
+  3.707557863076209*^9}},ExpressionUUID->"d0b17b7a-dfe3-406d-9619-\
+5d376fbe39b3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{
+      False->"\<\"https://www.wolframcloud.com/objects/b4167527-4dda-4a2f-\
+9242-d3cc1e57acef\"\>", True->
+      StyleBox["\<\"https://www.wolframcloud.com/objects/b4167527-4dda-4a2f-\
+9242-d3cc1e57acef\"\>", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData->{
+       URL[
+       "https://www.wolframcloud.com/objects/b4167527-4dda-4a2f-9242-\
+d3cc1e57acef"], None},
+     ButtonNote->
+      "https://www.wolframcloud.com/objects/b4167527-4dda-4a2f-9242-\
+d3cc1e57acef"],
+    Annotation[#, 
+     "https://www.wolframcloud.com/objects/b4167527-4dda-4a2f-9242-\
+d3cc1e57acef", "Hyperlink"]& ], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/b4167527-4dda-4a2f-9242-d3cc1e57acef"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{{3.707557814274281*^9, 3.707557821440288*^9}, {
+  3.707557854242566*^9, 
+  3.707557863871903*^9}},ExpressionUUID->"b2c2547b-b248-4ecd-93f6-\
+337fc0d66d6d"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 756},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 160, 3, 92, "Title", "ExpressionUUID" -> \
+"1a4b2eae-51a3-48c3-a10d-301b494b109a"],
+Cell[743, 27, 161, 3, 63, "Subchapter", "ExpressionUUID" -> \
+"88617fba-2b61-44a6-99a7-9f4be9b21b35"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[941, 35, 155, 3, 92, "Title", "ExpressionUUID" -> \
+"573fd104-e6fd-44ff-bdfd-2ed09dd722b0"],
+Cell[CellGroupData[{
+Cell[1121, 42, 280, 7, 32, "Input", "ExpressionUUID" -> \
+"b7d34743-d8c6-4a84-bbd1-07f7ad69c93d"],
+Cell[1404, 51, 1408, 38, 110, "Output", "ExpressionUUID" -> \
+"8d51e9cf-17c2-4c29-9795-783686e66fed"]
+}, Open  ]],
+Cell[2827, 92, 240, 4, 30, "Text", "ExpressionUUID" -> \
+"53d39b3c-b605-4df1-a45d-9e1776ae5aad",
+ CellID->783237056],
+Cell[CellGroupData[{
+Cell[3092, 100, 449, 11, 32, "Input", "ExpressionUUID" -> \
+"061b0b15-e911-4f39-99b3-5d3c559bda2e",
+ CellID->126377989],
+Cell[3544, 113, 401, 10, 35, "Output", "ExpressionUUID" -> \
+"7afef80f-81ea-45b3-a551-87a1e66acad7",
+ CellID->1193193173]
+}, Open  ]],
+Cell[3960, 126, 139, 1, 30, "Text", "ExpressionUUID" -> \
+"18b03c90-6dfc-4794-a6e4-ed8bd823e259",
+ CellID->248780633],
+Cell[CellGroupData[{
+Cell[4124, 131, 590, 14, 75, "Input", "ExpressionUUID" -> \
+"46341398-25de-4f53-8eb6-0cdcef122e7f",
+ CellID->105438122],
+Cell[4717, 147, 403, 10, 35, "Output", "ExpressionUUID" -> \
+"ec42b66a-32b3-49e5-a8f2-1842f25641f1",
+ CellID->941556664]
+}, Open  ]],
+Cell[5135, 160, 209, 2, 30, "Text", "ExpressionUUID" -> \
+"0653aaea-34cd-4c6e-9c33-83f99cb98477",
+ CellID->84309633],
+Cell[CellGroupData[{
+Cell[5369, 166, 751, 20, 96, "Input", "ExpressionUUID" -> \
+"79235d7d-10f8-48bb-8358-20fe42883df5",
+ CellID->1510197904],
+Cell[6123, 188, 796, 20, 43, "Output", "ExpressionUUID" -> \
+"4da5d78f-e8d4-4cf2-9862-5ec8c61b1e53",
+ CellID->863940777]
+}, Open  ]],
+Cell[6934, 211, 123, 1, 30, "Text", "ExpressionUUID" -> \
+"5925df72-7866-46db-be93-9a6ec936409d",
+ CellID->657714689],
+Cell[CellGroupData[{
+Cell[7082, 216, 378, 9, 32, "Input", "ExpressionUUID" -> \
+"16d21a27-0829-4a19-b305-695c5c0d8826"],
+Cell[7463, 227, 1518, 42, 110, "Output", "ExpressionUUID" -> \
+"6016c340-67d1-4189-b21f-3affbb8eb959"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9018, 274, 325, 8, 32, "Input", "ExpressionUUID" -> \
+"f39d8588-414a-4524-8109-89c76a33a156"],
+Cell[9346, 284, 1494, 42, 110, "Output", "ExpressionUUID" -> \
+"e2238d58-a36e-432c-ba0b-f1e008daa04e"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10889, 332, 156, 3, 92, "Title", "ExpressionUUID" -> \
+"a924b8b2-aac2-4126-9bbc-4471eb0644db"],
+Cell[CellGroupData[{
+Cell[11070, 339, 824, 22, 54, "Input", "ExpressionUUID" -> \
+"d0b17b7a-dfe3-406d-9619-5d376fbe39b3"],
+Cell[11897, 363, 1166, 31, 35, "Output", "ExpressionUUID" -> \
+"b2c2547b-b248-4ecd-93f6-337fc0d66d6d"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
