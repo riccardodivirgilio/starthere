@@ -37,8 +37,8 @@ templateResponse[template_, context_, meta_:<||>] :=
 	]
 
 $SnowFlakerApp = With[{
-	home   = templateLoader["index.html"], 
-	detail = templateLoader["detail.html"],
+	home     = templateLoader["index.html"], 
+	detail   = templateLoader["detail.html"],
 	notfound = templateLoader["404.html"]
 	},
 	URLDispatcher[{

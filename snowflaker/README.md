@@ -12,9 +12,9 @@ This application allows you to deploy a form that is generating nice snowflakers
 ## Test the app locally
 
 
-    StartWebServer[$SnowFlakerLite]
+    StartWebServer[$SnowFlakerApp]
 
 ## Deploy the app
 
 
-    CloudDeploy[$SnowFlakerLite, "imageidentify", Permissions -> "Public"]
+    CloudDeploy[$SnowFlakerApp, "snowflaker", Permissions -> "Public"]
