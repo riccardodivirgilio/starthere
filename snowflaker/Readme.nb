@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12957,        386]
-NotebookOptionsPosition[     12100,        350]
-NotebookOutlinePosition[     12458,        366]
-CellTagsIndexPosition[     12415,        363]
+NotebookDataLength[     13970,        406]
+NotebookOptionsPosition[     12531,        361]
+NotebookOutlinePosition[     12887,        377]
+CellTagsIndexPosition[     12844,        374]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,7 +21,9 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell["Import the code", "Subchapter",
- CellChangeTimes->{{3.665915797260538*^9, 3.665915799554841*^9}}],
+ CellChangeTimes->{{3.665915797260538*^9, 
+  3.665915799554841*^9}},ExpressionUUID->"413b361f-6d30-4852-a7ce-\
+160a8f579bcf"],
 
 Cell[BoxData[
  RowBox[{"Get", "[", 
@@ -30,34 +32,29 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"NotebookDirectory", "[", "]"}], ",", " ", "\"\<app.m\>\""}], 
     "}"}], "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.665915801270605*^9, 3.6659158116425533`*^9}}]
+ CellChangeTimes->{{3.665915801270605*^9, 
+  3.6659158116425533`*^9}},ExpressionUUID->"c4f2e0df-7126-4ede-ac5b-\
+52209c552fe4"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["Test the app locally", "Subchapter",
- CellChangeTimes->{{3.665915883376371*^9, 3.665915887110317*^9}}],
+ CellChangeTimes->{{3.665915883376371*^9, 
+  3.665915887110317*^9}},ExpressionUUID->"071bb7ec-8fdc-4b79-be4b-\
+532f95f456ce"],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{"StartWebServer", "[", "$SnowFlakerApp", "]"}]}]], "Input",
+Cell[BoxData[{
+ RowBox[{"<<", "HTTPHandling`"}], "\[IndentingNewLine]", 
+ RowBox[{"StartWebServer", "[", "$SnowFlakerApp", "]"}]}], "Input",
  CellChangeTimes->{{3.6659158883170853`*^9, 3.665915894533586*^9}, {
   3.665916211134362*^9, 3.6659162116872253`*^9}, {3.6659163537619*^9, 
   3.665916355616131*^9}, {3.6659164329821873`*^9, 3.6659164337863407`*^9}, {
-  3.6659178055497932`*^9, 3.665917821583439*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"WebServer", "::", "running"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"A server is already running on port \
-\[NoBreak]\\!\\(\\*RowBox[{\\\"7000\\\"}]\\)\[NoBreak].\"\>"}]], "Message", \
-"MSG",
- CellChangeTimes->{3.6659178222019873`*^9, 3.667731114835799*^9, 
-  3.667731158430683*^9, 3.667731989376318*^9, 3.667732032405122*^9}],
+  3.6659178055497932`*^9, 3.665917821583439*^9}, {3.707563193861458*^9, 
+  3.7075631973167543`*^9}},ExpressionUUID->"2c2634f5-d91a-4de0-848d-\
+b82d792fbc24"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -89,7 +86,7 @@ Cell[BoxData[
             Graphics[{
               If[
                TrueQ[
-                WebServer[
+                HTTPHandling`WebServer[
                  Association[]]["Running"]], 
                Darker[Green], Red], 
               EdgeForm[
@@ -104,15 +101,15 @@ Cell[BoxData[
                 AbsoluteCurrentValue[Magnification]}], Background -> None], 
             If[
              TrueQ[
-              WebServer[
+              HTTPHandling`WebServer[
                Association[]]["Running"]], 
              KillProcess[
-              WebServer[
+              HTTPHandling`WebServer[
                Association[]]], 
              RunProcess[
-              WebServer[
+              HTTPHandling`WebServer[
                Association[]]]], Appearance -> "Frameless"], StandardForm],
-          ImageSizeCache->{30., {11., 18.}}], GridBox[{
+          ImageSizeCache->{29., {8., 15.}}], GridBox[{
            {
             RowBox[{
              TagBox["\<\"URL: \"\>",
@@ -143,7 +140,7 @@ Cell[BoxData[
              TagBox[
               DynamicBox[ToBoxes[
                 TrueQ[
-                 WebServer[
+                 HTTPHandling`WebServer[
                   Association[]]["Running"]], StandardForm],
                ImageSizeCache->{22., {0., 7.}}],
               "SummaryItem"]}]}
@@ -176,6 +173,7 @@ Cell[BoxData[
            Evaluator->Automatic,
            Method->"Preemptive"],
           Alignment->{Center, Center},
+          
           ImageSize->
            Dynamic[{
             Automatic, 3.5 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
@@ -185,7 +183,7 @@ Cell[BoxData[
             Graphics[{
               If[
                TrueQ[
-                WebServer[
+                HTTPHandling`WebServer[
                  Association[]]["Running"]], 
                Darker[Green], Red], 
               EdgeForm[
@@ -200,13 +198,13 @@ Cell[BoxData[
                 AbsoluteCurrentValue[Magnification]}], Background -> None], 
             If[
              TrueQ[
-              WebServer[
+              HTTPHandling`WebServer[
                Association[]]["Running"]], 
              KillProcess[
-              WebServer[
+              HTTPHandling`WebServer[
                Association[]]], 
              RunProcess[
-              WebServer[
+              HTTPHandling`WebServer[
                Association[]]]], Appearance -> "Frameless"], StandardForm]], 
          GridBox[{
            {
@@ -239,7 +237,7 @@ Cell[BoxData[
              TagBox[
               DynamicBox[ToBoxes[
                 TrueQ[
-                 WebServer[
+                 HTTPHandling`WebServer[
                   Association[]]["Running"]], StandardForm]],
               "SummaryItem"]}]},
            {
@@ -249,7 +247,7 @@ Cell[BoxData[
              TagBox[
               DynamicBox[ToBoxes[
                 Short[
-                 WebServer[
+                 HTTPHandling`WebServer[
                   Association[]]["Handler", HoldForm]], StandardForm]],
               "SummaryItem"]}]}
           },
@@ -273,7 +271,7 @@ Cell[BoxData[
       ImageSize->Automatic],
      BaselinePosition->Baseline],
     DynamicModuleValues:>{}], "]"}],
-  WebServer[
+  HTTPHandling`WebServer[
    Association[]],
   Editable->False,
   SelectWithContents->True,
@@ -283,14 +281,19 @@ Cell[BoxData[
    3.665916268032568*^9, 3.665916309594873*^9, {3.665916351350802*^9, 
    3.6659163562652397`*^9}, 3.665916396023183*^9, 3.665916434666161*^9, 
    3.66591777948393*^9, 3.66591782221524*^9, 3.667731114851881*^9, 
-   3.667731158447364*^9, 3.667731989391799*^9, 3.667732032425462*^9}]
+   3.667731158447364*^9, 3.667731989391799*^9, 3.667732032425462*^9, 
+   3.707563198619507*^9, 
+   3.7075637891718807`*^9},ExpressionUUID->"30d3f625-0641-4a65-9191-\
+a71b84ad1f10"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["Deploy the app", "Subchapter",
- CellChangeTimes->{{3.665915797260538*^9, 3.665915827817377*^9}}],
+ CellChangeTimes->{{3.665915797260538*^9, 
+  3.665915827817377*^9}},ExpressionUUID->"7f3f156f-767a-47d2-b2fd-\
+fe8cbcda5fa5"],
 
 Cell[CellGroupData[{
 
@@ -302,7 +305,9 @@ Cell[BoxData[
 
  CellChangeTimes->{{3.6659158293429613`*^9, 3.665915870784995*^9}, {
    3.6659177836848173`*^9, 3.665917785307746*^9}, 3.665917824438387*^9, {
-   3.667732650138052*^9, 3.6677326513913517`*^9}}],
+   3.667732650138052*^9, 
+   3.6677326513913517`*^9}},ExpressionUUID->"b5875233-33b2-4744-bb3e-\
+7dc366804e64"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -310,10 +315,10 @@ Cell[BoxData[
    TagBox[
     ButtonBox[
      PaneSelectorBox[{
-      False->"\<\"https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-\
-4faf-9ab2-1e32d830bfdb/touringmachine\"\>", True->
-      StyleBox["\<\"https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-\
-4faf-9ab2-1e32d830bfdb/touringmachine\"\>", "HyperlinkActive"]}, Dynamic[
+      False->"\<\"https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-\
+9e6a-c47f64acb5bc\"\>", True->
+      StyleBox["\<\"https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-\
+9e6a-c47f64acb5bc\"\>", "HyperlinkActive"]}, Dynamic[
        CurrentValue["MouseOver"]],
       BaseStyle->{"Hyperlink"},
       FrameMargins->0,
@@ -321,37 +326,43 @@ Cell[BoxData[
      BaseStyle->"Hyperlink",
      ButtonData->{
        URL[
-       "https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-4faf-9ab2-\
-1e32d830bfdb/touringmachine"], None},
+       "https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-9e6a-\
+c47f64acb5bc"], None},
      ButtonNote->
-      "https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-4faf-9ab2-\
-1e32d830bfdb/touringmachine"],
+      "https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-9e6a-\
+c47f64acb5bc"],
     Annotation[#, 
-     "https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-4faf-9ab2-\
-1e32d830bfdb/touringmachine", "Hyperlink"]& ], "]"}],
+     "https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-9e6a-\
+c47f64acb5bc", "Hyperlink"]& ], "]"}],
   CloudObject[
-  "https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-4faf-9ab2-\
-1e32d830bfdb/touringmachine"],
+  "https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-9e6a-c47f64acb5bc"],
   SelectWithContents->True]], "Output",
  CellChangeTimes->{{3.665915838539562*^9, 3.6659158735983047`*^9}, {
-   3.665917783940413*^9, 3.665917789024214*^9}, 3.665917827317348*^9}]
+   3.665917783940413*^9, 3.665917789024214*^9}, 3.665917827317348*^9, 
+   3.707563306787929*^9, 
+   3.707563825361926*^9},ExpressionUUID->"5fb7ab8f-2fec-47f8-980f-\
+3c09a6d60c46"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["Enjoy :)", "Subchapter",
- CellChangeTimes->{{3.665915797260538*^9, 3.6659158563599586`*^9}}],
+ CellChangeTimes->{{3.665915797260538*^9, 
+  3.6659158563599586`*^9}},ExpressionUUID->"66e9acb7-e86e-4514-90d9-\
+9cdd3ea2e757"],
 
 Cell[BoxData[
  RowBox[{"SystemOpen", "[", "app", "]"}]], "Input",
- CellChangeTimes->{{3.665915859031808*^9, 3.665915861504464*^9}}]
+ CellChangeTimes->{{3.665915859031808*^9, 
+  3.665915861504464*^9}},ExpressionUUID->"9487e707-3ef8-41c9-8e57-\
+f7de08052011"]
 }, Open  ]]
 },
 WindowSize->{808, 755},
-WindowMargins->{{36, Automatic}, {16, Automatic}},
-FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
-2016)",
+WindowMargins->{{Automatic, 231}, {16, Automatic}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -366,27 +377,36 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 103, 1, 62, "Subchapter"],
-Cell[686, 25, 276, 7, 28, "Input"]
+Cell[580, 22, 163, 3, 63, "Subchapter", "ExpressionUUID" -> \
+"413b361f-6d30-4852-a7ce-160a8f579bcf"],
+Cell[746, 27, 336, 9, 32, "Input", "ExpressionUUID" -> \
+"c4f2e0df-7126-4ede-ac5b-52209c552fe4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[999, 37, 108, 1, 62, "Subchapter"],
+Cell[1119, 41, 168, 3, 63, "Subchapter", "ExpressionUUID" -> \
+"071bb7ec-8fdc-4b79-be4b-532f95f456ce"],
 Cell[CellGroupData[{
-Cell[1132, 42, 383, 6, 46, "Input"],
-Cell[1518, 50, 383, 9, 24, "Message"],
-Cell[1904, 61, 8076, 224, 64, "Output"]
+Cell[1312, 48, 515, 8, 54, "Input", "ExpressionUUID" -> \
+"2c2634f5-d91a-4de0-848d-b82d792fbc24"],
+Cell[1830, 58, 8353, 228, 63, "Output", "ExpressionUUID" -> \
+"30d3f625-0641-4a65-9191-a71b84ad1f10"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10029, 291, 102, 1, 62, "Subchapter"],
+Cell[10232, 292, 162, 3, 63, "Subchapter", "ExpressionUUID" -> \
+"7f3f156f-767a-47d2-b2fd-fe8cbcda5fa5"],
 Cell[CellGroupData[{
-Cell[10156, 296, 391, 8, 28, "Input"],
-Cell[10550, 306, 1253, 30, 83, "Output"]
+Cell[10419, 299, 452, 10, 32, "Input", "ExpressionUUID" -> \
+"b5875233-33b2-4744-bb3e-7dc366804e64"],
+Cell[10874, 311, 1240, 32, 35, "Output", "ExpressionUUID" -> \
+"5fb7ab8f-2fec-47f8-980f-3c09a6d60c46"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11852, 342, 98, 1, 62, "Subchapter"],
-Cell[11953, 345, 131, 2, 28, "Input"]
+Cell[12163, 349, 158, 3, 63, "Subchapter", "ExpressionUUID" -> \
+"66e9acb7-e86e-4514-90d9-9cdd3ea2e757"],
+Cell[12324, 354, 191, 4, 32, "Input", "ExpressionUUID" -> \
+"9487e707-3ef8-41c9-8e57-f7de08052011"]
 }, Open  ]]
 }
 ]
