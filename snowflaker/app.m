@@ -1,6 +1,4 @@
 
-$ApplicationPath = DirectoryName[$InputFileName];
-
 generator[n_] := Module[
 	{tab, rot},
 	tab = RandomReal[{-1/2, 1/2}, {n, 2}];
@@ -20,7 +18,7 @@ $AppRoot := Replace[$EvaluationCloudObject, {None -> "/", c_CloudObject :> First
 
 templateLoader[path_] := FileTemplate[
 	FileNameJoin[{"Templates", path}],
-	Path -> $ApplicationPath
+	Path -> DirectoryName[$InputFileName]
 ];
 templateResponse[path_String, rest___] :=
 	templateResponse[templateLoader[path], rest]
@@ -55,7 +53,7 @@ $SnowFlakerApp = With[{
 				"description" -> "This is the snow flake "<> n <>" which is super cool.",
 				"result" -> generator[FromDigits[n]],
 				"number" -> FromDigits[n]
-				}],
+			}],
 		___ :> templateResponse[
 			notfound,
 			<||>,
