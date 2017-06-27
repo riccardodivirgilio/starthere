@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13970,        406]
-NotebookOptionsPosition[     12531,        361]
-NotebookOutlinePosition[     12887,        377]
-CellTagsIndexPosition[     12844,        374]
+NotebookDataLength[     15181,        428]
+NotebookOptionsPosition[     13640,        381]
+NotebookOutlinePosition[     13996,        397]
+CellTagsIndexPosition[     13953,        394]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -46,15 +46,31 @@ Cell["Test the app locally", "Subchapter",
 
 Cell[CellGroupData[{
 
-Cell[BoxData[{
- RowBox[{"<<", "HTTPHandling`"}], "\[IndentingNewLine]", 
- RowBox[{"StartWebServer", "[", "$SnowFlakerApp", "]"}]}], "Input",
+Cell[BoxData[
+ RowBox[{"StartWebServer", "[", "$SnowFlakerApp", "]"}]], "Input",
  CellChangeTimes->{{3.6659158883170853`*^9, 3.665915894533586*^9}, {
   3.665916211134362*^9, 3.6659162116872253`*^9}, {3.6659163537619*^9, 
   3.665916355616131*^9}, {3.6659164329821873`*^9, 3.6659164337863407`*^9}, {
   3.6659178055497932`*^9, 3.665917821583439*^9}, {3.707563193861458*^9, 
-  3.7075631973167543`*^9}},ExpressionUUID->"2c2634f5-d91a-4de0-848d-\
+  3.7075631973167543`*^9}, {3.707568937605406*^9, 3.707568937843927*^9}, {
+  3.707568988625997*^9, 3.707569027273242*^9}, {3.707569248843237*^9, 
+  3.707569249480782*^9}},ExpressionUUID->"2c2634f5-d91a-4de0-848d-\
 b82d792fbc24"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "WebServer","running",
+   "\"A server is already running on port \\!\\(\\*RowBox[{\\\"7000\\\"}]\\).\
+\"",2,78,70,20752124365660954529,"Local","HTTPHandling`WebServer"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.707568412656152*^9, {3.707568447208621*^9, 3.707568539095212*^9}, 
+   3.707568899174787*^9, {3.707568934082827*^9, 3.707568996918665*^9}, {
+   3.707569028627747*^9, 3.707569051084379*^9}, 3.7075690822612123`*^9, {
+   3.7075691904020147`*^9, 3.707569209072814*^9}, {3.7075692459765263`*^9, 
+   3.707569260433486*^9}, 
+   3.707569544523202*^9},ExpressionUUID->"e068a8d5-fb4e-4e4d-bca5-\
+81e1a5b5449a"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -282,9 +298,13 @@ Cell[BoxData[
    3.6659163562652397`*^9}, 3.665916396023183*^9, 3.665916434666161*^9, 
    3.66591777948393*^9, 3.66591782221524*^9, 3.667731114851881*^9, 
    3.667731158447364*^9, 3.667731989391799*^9, 3.667732032425462*^9, 
-   3.707563198619507*^9, 
-   3.7075637891718807`*^9},ExpressionUUID->"30d3f625-0641-4a65-9191-\
-a71b84ad1f10"]
+   3.707563198619507*^9, 3.7075637891718807`*^9, 3.707568413440864*^9, {
+   3.707568447942029*^9, 3.707568539865573*^9}, 3.707568899674782*^9, {
+   3.707568934586359*^9, 3.70756899768642*^9}, {3.7075690290269547`*^9, 
+   3.707569051965352*^9}, 3.707569082987818*^9, {3.707569191145307*^9, 
+   3.70756920988733*^9}, {3.707569246471775*^9, 3.707569260924493*^9}, 
+   3.707569545022773*^9},ExpressionUUID->"94e02459-8a64-4ad4-881a-\
+7f3b887d7d8e"]
 }, Open  ]]
 }, Open  ]],
 
@@ -315,10 +335,10 @@ Cell[BoxData[
    TagBox[
     ButtonBox[
      PaneSelectorBox[{
-      False->"\<\"https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-\
-9e6a-c47f64acb5bc\"\>", True->
-      StyleBox["\<\"https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-\
-9e6a-c47f64acb5bc\"\>", "HyperlinkActive"]}, Dynamic[
+      False->"\<\"https://www.wolframcloud.com/objects/71547fe4-bccc-430a-\
+91c7-d4e5221c4865\"\>", True->
+      StyleBox["\<\"https://www.wolframcloud.com/objects/71547fe4-bccc-430a-\
+91c7-d4e5221c4865\"\>", "HyperlinkActive"]}, Dynamic[
        CurrentValue["MouseOver"]],
       BaseStyle->{"Hyperlink"},
       FrameMargins->0,
@@ -326,22 +346,22 @@ Cell[BoxData[
      BaseStyle->"Hyperlink",
      ButtonData->{
        URL[
-       "https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-9e6a-\
-c47f64acb5bc"], None},
+       "https://www.wolframcloud.com/objects/71547fe4-bccc-430a-91c7-\
+d4e5221c4865"], None},
      ButtonNote->
-      "https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-9e6a-\
-c47f64acb5bc"],
+      "https://www.wolframcloud.com/objects/71547fe4-bccc-430a-91c7-\
+d4e5221c4865"],
     Annotation[#, 
-     "https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-9e6a-\
-c47f64acb5bc", "Hyperlink"]& ], "]"}],
+     "https://www.wolframcloud.com/objects/71547fe4-bccc-430a-91c7-\
+d4e5221c4865", "Hyperlink"]& ], "]"}],
   CloudObject[
-  "https://www.wolframcloud.com/objects/f98cfa03-9a03-4ebf-9e6a-c47f64acb5bc"],
+  "https://www.wolframcloud.com/objects/71547fe4-bccc-430a-91c7-d4e5221c4865"],
   SelectWithContents->True]], "Output",
  CellChangeTimes->{{3.665915838539562*^9, 3.6659158735983047`*^9}, {
    3.665917783940413*^9, 3.665917789024214*^9}, 3.665917827317348*^9, 
-   3.707563306787929*^9, 
-   3.707563825361926*^9},ExpressionUUID->"5fb7ab8f-2fec-47f8-980f-\
-3c09a6d60c46"]
+   3.707563306787929*^9, 3.707563825361926*^9, 
+   3.707569520744205*^9},ExpressionUUID->"16eeed19-be73-413e-b223-\
+bbfbfa08f103"]
 }, Open  ]]
 }, Open  ]],
 
@@ -361,7 +381,7 @@ f7de08052011"]
 },
 WindowSize->{808, 755},
 WindowMargins->{{Automatic, 231}, {16, Automatic}},
-FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
 2017)",
 StyleDefinitions->"Default.nb"
 ]
@@ -386,26 +406,28 @@ Cell[CellGroupData[{
 Cell[1119, 41, 168, 3, 63, "Subchapter", "ExpressionUUID" -> \
 "071bb7ec-8fdc-4b79-be4b-532f95f456ce"],
 Cell[CellGroupData[{
-Cell[1312, 48, 515, 8, 54, "Input", "ExpressionUUID" -> \
+Cell[1312, 48, 599, 9, 32, "Input", "ExpressionUUID" -> \
 "2c2634f5-d91a-4de0-848d-b82d792fbc24"],
-Cell[1830, 58, 8353, 228, 63, "Output", "ExpressionUUID" -> \
-"30d3f625-0641-4a65-9191-a71b84ad1f10"]
+Cell[1914, 59, 666, 13, 24, "Message", "ExpressionUUID" -> \
+"e068a8d5-fb4e-4e4d-bca5-81e1a5b5449a"],
+Cell[2583, 74, 8687, 232, 63, "Output", "ExpressionUUID" -> \
+"94e02459-8a64-4ad4-881a-7f3b887d7d8e"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10232, 292, 162, 3, 63, "Subchapter", "ExpressionUUID" -> \
+Cell[11319, 312, 162, 3, 63, "Subchapter", "ExpressionUUID" -> \
 "7f3f156f-767a-47d2-b2fd-fe8cbcda5fa5"],
 Cell[CellGroupData[{
-Cell[10419, 299, 452, 10, 32, "Input", "ExpressionUUID" -> \
+Cell[11506, 319, 452, 10, 32, "Input", "ExpressionUUID" -> \
 "b5875233-33b2-4744-bb3e-7dc366804e64"],
-Cell[10874, 311, 1240, 32, 35, "Output", "ExpressionUUID" -> \
-"5fb7ab8f-2fec-47f8-980f-3c09a6d60c46"]
+Cell[11961, 331, 1262, 32, 35, "Output", "ExpressionUUID" -> \
+"16eeed19-be73-413e-b223-bbfbfa08f103"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12163, 349, 158, 3, 63, "Subchapter", "ExpressionUUID" -> \
+Cell[13272, 369, 158, 3, 63, "Subchapter", "ExpressionUUID" -> \
 "66e9acb7-e86e-4514-90d9-9cdd3ea2e757"],
-Cell[12324, 354, 191, 4, 32, "Input", "ExpressionUUID" -> \
+Cell[13433, 374, 191, 4, 32, "Input", "ExpressionUUID" -> \
 "9487e707-3ef8-41c9-8e57-f7de08052011"]
 }, Open  ]]
 }
