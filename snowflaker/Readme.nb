@@ -1,0 +1,394 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12957,        386]
+NotebookOptionsPosition[     12100,        350]
+NotebookOutlinePosition[     12458,        366]
+CellTagsIndexPosition[     12415,        363]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Import the code", "Subchapter",
+ CellChangeTimes->{{3.665915797260538*^9, 3.665915799554841*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Get", "[", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], ",", " ", "\"\<app.m\>\""}], 
+    "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.665915801270605*^9, 3.6659158116425533`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test the app locally", "Subchapter",
+ CellChangeTimes->{{3.665915883376371*^9, 3.665915887110317*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"StartWebServer", "[", "$SnowFlakerApp", "]"}]}]], "Input",
+ CellChangeTimes->{{3.6659158883170853`*^9, 3.665915894533586*^9}, {
+  3.665916211134362*^9, 3.6659162116872253`*^9}, {3.6659163537619*^9, 
+  3.665916355616131*^9}, {3.6659164329821873`*^9, 3.6659164337863407`*^9}, {
+  3.6659178055497932`*^9, 3.665917821583439*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"WebServer", "::", "running"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"A server is already running on port \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"7000\\\"}]\\)\[NoBreak].\"\>"}]], "Message", \
+"MSG",
+ CellChangeTimes->{3.6659178222019873`*^9, 3.667731114835799*^9, 
+  3.667731158430683*^9, 3.667731989376318*^9, 3.667732032405122*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["WebServer",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False}, 
+    PanelBox[
+     PaneSelectorBox[{False->GridBox[{
+        {
+         PaneBox[
+          ButtonBox[
+           
+           DynamicBox[FEPrivate`FrontEndResource[
+            "FEBitmaps", "SquarePlusIconMedium"],
+            ImageSizeCache->{12., {0., 12.}}],
+           Appearance->None,
+           ButtonFunction:>(Typeset`open$$ = True),
+           Evaluator->Automatic,
+           Method->"Preemptive"],
+          Alignment->{Center, Center},
+          
+          ImageSize->
+           Dynamic[{
+            Automatic, 3.5 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+             Magnification]}]], 
+         DynamicBox[ToBoxes[
+           Button[
+            Graphics[{
+              If[
+               TrueQ[
+                WebServer[
+                 Association[]]["Running"]], 
+               Darker[Green], Red], 
+              EdgeForm[
+               Directive[Thick, White]], 
+              Disk[], 
+              Text[
+               Style["\[WolframLanguageLogo]", 
+                Directive[22, White, Bold]], 
+               Scaled[{0.53, 0.48}]]}, ImageSize -> 
+             Dynamic[{
+               Automatic, (3.2 CurrentValue["FontCapHeight"])/
+                AbsoluteCurrentValue[Magnification]}], Background -> None], 
+            If[
+             TrueQ[
+              WebServer[
+               Association[]]["Running"]], 
+             KillProcess[
+              WebServer[
+               Association[]]], 
+             RunProcess[
+              WebServer[
+               Association[]]]], Appearance -> "Frameless"], StandardForm],
+          ImageSizeCache->{30., {11., 18.}}], GridBox[{
+           {
+            RowBox[{
+             TagBox["\<\"URL: \"\>",
+              "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+             TagBox[
+              TagBox[
+               ButtonBox[
+                
+                PaneSelectorBox[{False->"\<\"http://localhost:7000/\"\>", 
+                 True->
+                 
+                 StyleBox["\<\"http://localhost:7000/\"\>", 
+                  "HyperlinkActive"]}, Dynamic[
+                  CurrentValue["MouseOver"]],
+                 BaseStyle->{"Hyperlink"},
+                 FrameMargins->0,
+                 ImageSize->Automatic],
+                BaseStyle->"Hyperlink",
+                ButtonData->{
+                  URL["http://localhost:7000/"], None},
+                ButtonNote->"http://localhost:7000/"],
+               Annotation[#, "http://localhost:7000/", "Hyperlink"]& ],
+              "SummaryItem"]}]},
+           {
+            RowBox[{
+             TagBox["\<\"Running: \"\>",
+              "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+             TagBox[
+              DynamicBox[ToBoxes[
+                TrueQ[
+                 WebServer[
+                  Association[]]["Running"]], StandardForm],
+               ImageSizeCache->{22., {0., 7.}}],
+              "SummaryItem"]}]}
+          },
+          AutoDelete->False,
+          
+          BaseStyle->{
+           ShowStringCharacters -> False, NumberMarks -> False, 
+            PrintPrecision -> 3, ShowSyntaxStyles -> False},
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+          
+          GridBoxItemSize->{
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+          GridBoxSpacings->{"Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}
+       },
+       AutoDelete->False,
+       BaselinePosition->{1, 1},
+       GridBoxAlignment->{"Rows" -> {{Top}}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True->
+      GridBox[{
+        {
+         PaneBox[
+          ButtonBox[
+           
+           DynamicBox[FEPrivate`FrontEndResource[
+            "FEBitmaps", "SquareMinusIconMedium"]],
+           Appearance->None,
+           ButtonFunction:>(Typeset`open$$ = False),
+           Evaluator->Automatic,
+           Method->"Preemptive"],
+          Alignment->{Center, Center},
+          ImageSize->
+           Dynamic[{
+            Automatic, 3.5 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+             Magnification]}]], 
+         DynamicBox[ToBoxes[
+           Button[
+            Graphics[{
+              If[
+               TrueQ[
+                WebServer[
+                 Association[]]["Running"]], 
+               Darker[Green], Red], 
+              EdgeForm[
+               Directive[Thick, White]], 
+              Disk[], 
+              Text[
+               Style["\[WolframLanguageLogo]", 
+                Directive[22, White, Bold]], 
+               Scaled[{0.53, 0.48}]]}, ImageSize -> 
+             Dynamic[{
+               Automatic, (3.2 CurrentValue["FontCapHeight"])/
+                AbsoluteCurrentValue[Magnification]}], Background -> None], 
+            If[
+             TrueQ[
+              WebServer[
+               Association[]]["Running"]], 
+             KillProcess[
+              WebServer[
+               Association[]]], 
+             RunProcess[
+              WebServer[
+               Association[]]]], Appearance -> "Frameless"], StandardForm]], 
+         GridBox[{
+           {
+            RowBox[{
+             TagBox["\<\"URL: \"\>",
+              "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+             TagBox[
+              TagBox[
+               ButtonBox[
+                
+                PaneSelectorBox[{False->"\<\"http://localhost:7000/\"\>", 
+                 True->
+                 
+                 StyleBox["\<\"http://localhost:7000/\"\>", 
+                  "HyperlinkActive"]}, Dynamic[
+                  CurrentValue["MouseOver"]],
+                 BaseStyle->{"Hyperlink"},
+                 FrameMargins->0,
+                 ImageSize->Automatic],
+                BaseStyle->"Hyperlink",
+                ButtonData->{
+                  URL["http://localhost:7000/"], None},
+                ButtonNote->"http://localhost:7000/"],
+               Annotation[#, "http://localhost:7000/", "Hyperlink"]& ],
+              "SummaryItem"]}]},
+           {
+            RowBox[{
+             TagBox["\<\"Running: \"\>",
+              "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+             TagBox[
+              DynamicBox[ToBoxes[
+                TrueQ[
+                 WebServer[
+                  Association[]]["Running"]], StandardForm]],
+              "SummaryItem"]}]},
+           {
+            RowBox[{
+             TagBox["\<\"Handler: \"\>",
+              "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+             TagBox[
+              DynamicBox[ToBoxes[
+                Short[
+                 WebServer[
+                  Association[]]["Handler", HoldForm]], StandardForm]],
+              "SummaryItem"]}]}
+          },
+          AutoDelete->False,
+          
+          BaseStyle->{
+           ShowStringCharacters -> False, NumberMarks -> False, 
+            PrintPrecision -> 3, ShowSyntaxStyles -> False},
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+          
+          GridBoxItemSize->{
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+          GridBoxSpacings->{"Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}
+       },
+       AutoDelete->False,
+       BaselinePosition->{1, 1},
+       GridBoxAlignment->{"Rows" -> {{Top}}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, Dynamic[
+      Typeset`open$$],
+      ImageSize->Automatic],
+     BaselinePosition->Baseline],
+    DynamicModuleValues:>{}], "]"}],
+  WebServer[
+   Association[]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.6659158949915257`*^9, {3.665916200786757*^9, 3.665916237220196*^9}, 
+   3.665916268032568*^9, 3.665916309594873*^9, {3.665916351350802*^9, 
+   3.6659163562652397`*^9}, 3.665916396023183*^9, 3.665916434666161*^9, 
+   3.66591777948393*^9, 3.66591782221524*^9, 3.667731114851881*^9, 
+   3.667731158447364*^9, 3.667731989391799*^9, 3.667732032425462*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Deploy the app", "Subchapter",
+ CellChangeTimes->{{3.665915797260538*^9, 3.665915827817377*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"app", " ", "=", " ", 
+  RowBox[{"CloudDeploy", "[", 
+   RowBox[{"$SnowFlakerApp", ",", " ", 
+    RowBox[{"Permissions", "\[Rule]", "\"\<Public\>\""}]}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.6659158293429613`*^9, 3.665915870784995*^9}, {
+   3.6659177836848173`*^9, 3.665917785307746*^9}, 3.665917824438387*^9, {
+   3.667732650138052*^9, 3.6677326513913517`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{
+      False->"\<\"https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-\
+4faf-9ab2-1e32d830bfdb/touringmachine\"\>", True->
+      StyleBox["\<\"https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-\
+4faf-9ab2-1e32d830bfdb/touringmachine\"\>", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData->{
+       URL[
+       "https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-4faf-9ab2-\
+1e32d830bfdb/touringmachine"], None},
+     ButtonNote->
+      "https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-4faf-9ab2-\
+1e32d830bfdb/touringmachine"],
+    Annotation[#, 
+     "https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-4faf-9ab2-\
+1e32d830bfdb/touringmachine", "Hyperlink"]& ], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/user-0b2c4041-0d2a-4faf-9ab2-\
+1e32d830bfdb/touringmachine"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{{3.665915838539562*^9, 3.6659158735983047`*^9}, {
+   3.665917783940413*^9, 3.665917789024214*^9}, 3.665917827317348*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enjoy :)", "Subchapter",
+ CellChangeTimes->{{3.665915797260538*^9, 3.6659158563599586`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"SystemOpen", "[", "app", "]"}]], "Input",
+ CellChangeTimes->{{3.665915859031808*^9, 3.665915861504464*^9}}]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{36, Automatic}, {16, Automatic}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 103, 1, 62, "Subchapter"],
+Cell[686, 25, 276, 7, 28, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[999, 37, 108, 1, 62, "Subchapter"],
+Cell[CellGroupData[{
+Cell[1132, 42, 383, 6, 46, "Input"],
+Cell[1518, 50, 383, 9, 24, "Message"],
+Cell[1904, 61, 8076, 224, 64, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10029, 291, 102, 1, 62, "Subchapter"],
+Cell[CellGroupData[{
+Cell[10156, 296, 391, 8, 28, "Input"],
+Cell[10550, 306, 1253, 30, 83, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11852, 342, 98, 1, 62, "Subchapter"],
+Cell[11953, 345, 131, 2, 28, "Input"]
+}, Open  ]]
+}
+]
+*)
+
